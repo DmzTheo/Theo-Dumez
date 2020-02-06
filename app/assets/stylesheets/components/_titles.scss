@@ -1,0 +1,21 @@
+.h1, .h2, .h3{
+	text-align: center;
+	color: $teel;
+	font-weight: 500;
+	line-height: 180%;
+	letter-spacing: 0.12em;
+}
+
+.h1{
+	font-size: 25px;
+}
+
+.h2{
+	font-size: 25px;
+}
+
+p {
+	margin: 20px 0 0 0;
+	color: $black;
+	line-height: 200%;
+}

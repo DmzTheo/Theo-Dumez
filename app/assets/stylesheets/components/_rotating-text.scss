@@ -1,0 +1,43 @@
+.rotating-text {
+  font-family: $headers-font;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 180%;
+  color: $black;
+  transform: translateX(-80px);
+  margin: 100px 0 0 0;
+  background-color: $white;
+}
+
+.rotating-text p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 0;
+  font-family: $headers-font;
+  letter-spacing: 0.12em;
+}
+
+.rotating-text p .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+
+.rotating-text p .word .letter {
+  transform-origin: center center 25px;
+}
+
+.rotating-text p .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.rotating-text p .word .letter.in {
+  transition: 0.38s ease;
+}
+
+.rotating-text p .word .letter.behind {
+  transform: rotateX(-90deg);
+}

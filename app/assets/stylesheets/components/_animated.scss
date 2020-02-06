@@ -1,0 +1,7 @@
+.animated{
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	transition-timing-function: cubic-bezier(.25,.1,.2,1);
+}

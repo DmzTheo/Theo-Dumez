@@ -1,2 +1,50 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render "shared/navbar" %>
+<%= render "shared/banner" %>
+
+<div class="presentation bg-tuskan flex-center flex-column">
+	<div class="h1-container">
+		<p class="h1 black mb-1">Data Web Univers</p>
+		<h1 class="h1 black-olive m-0">
+			Agence web Aix-en-provence
+		</h1>
+		<div class="inline">
+			<p class="h2 m-0 black-olive">ou plutôt un&#160;</p>
+			<h2 class="h2 m-0 black-olive">freelance spécialisé en growth marketing</h2>
+		</div>
+	</div>
+	<div class="cent80 flex-around mb-3">
+		<p class="self-start ml-4 mt-4 black font-16">
+			Une petite - mais fière - agence digitale qui accompagne les TPE, artisans et entrepreneurs d'Aix-en-Provence.<br>
+			Une entreprise humaine où la proximité est importante.
+		</p>
+		<%= image_tag(asset_path('growth.svg'), alt: 'icone croissance', class: 'growth-icon') %>
+	</div>
+</div>
+
+<div class="nos-leviers flex-center flex-column">
+	<h2 class="h2 mb-5 mt-0 mr-0 ml-0 black-olive index1">Nos leviers</h2>
+	<div class="leviers flex-end flex-row mt-4 index1">
+		<%= image_tag(asset_path('fond1.png'),alt: 'fond design', class: 'fond-levier1') %>
+		<div class="levier flex-center flex-column">
+			<div class="cercle">
+				<%= image_tag(asset_path('computer.svg'), alt: 'computer icon', class: 'card_img') %>
+			</div>
+			<p>Création de site web</p>
+		</div>
+		<%= image_tag(asset_path('fond2.png'),alt: 'fond design', class: 'fond-levier2') %>
+		<div class="levier flex-center flex-column">
+			<div class="cercle">
+				<%= image_tag(asset_path('search.svg'), alt: 'search icon', class: 'card_img') %>
+			</div>
+			<p>Référencement (SEO/SEA)</p>
+		</div>
+		<%= image_tag(asset_path('fond2.png'),alt: 'fond design', class: 'fond-levier2') %>
+		<div class="levier flex-center flex-column">
+			<div class="cercle">
+				<%= image_tag(asset_path('analytics.svg'), alt: 'analytics icon', class: 'card_img') %>
+			</div>
+			<p>Expérience Utilisateur (UX)</p>
+		</div>
+		<%= image_tag(asset_path('fond3.png'),alt: 'fond design', class: 'fond-levier3') %>
+	</div>
+</div>

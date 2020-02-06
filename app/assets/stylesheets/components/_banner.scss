@@ -1,0 +1,50 @@
+.banner-text{
+	display: flex
+}
+
+.img-banner{
+	width: 40%;
+	background-color: $white;
+	border-left: 1px solid $khaki;
+}
+
+.slide-banner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 20px 80px;
+}
+
+.banner-vide{
+	width: 20%;
+}
+
+.cent{
+	width: 100%;
+}
+
+.vertical-text{
+	transform: rotate(-90deg);
+	position: absolute;
+	left: 70px;
+	bottom: 100px;
+	font-size: 12px;
+	color: $black;
+}
+
+.arrow{
+  transform: rotate(90deg);
+  position: relative;
+  right: 30px;
+}
+
+.banner-body-text{
+	position: absolute;
+	left: 12%;
+	bottom: 20%;
+	font-family: $body-font;
+	font-size: 25px;
+	letter-spacing: 0.12em;
+	color: $khaki;
+}

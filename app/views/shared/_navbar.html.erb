@@ -1,0 +1,13 @@
+<div class='navbar'>
+	<div class='logo'>
+		<%= link_to((root_path), title: "Accueil") do %>
+			<%= image_tag(asset_path('Growth-marketing.png'), alt: 'logo data web univers', class: 'img_navbar') %>
+		<% end %>
+	</div>
+	<div class='nav-links'>
+		<%= link_to "Accueil", '#', title: 'Acueil', class: 'nav-link' %>
+		<%= link_to "Qui sommes-nous ?", '#', title: 'Agence', class: 'nav-link' %>
+		<%= link_to "Nos prestations v", '#', title: 'Nos prestations', class: 'nav-link' %>
+		<%= link_to "Contactez-nous", '#', title: 'Contactez-nous', class: 'nav-link' %>
+	</div>
+</div>
