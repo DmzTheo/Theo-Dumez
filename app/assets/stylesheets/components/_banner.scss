@@ -3,9 +3,31 @@
 }
 
 .img-banner{
-	width: 40%;
+	max-width: 40%;
 	background-color: $white;
-	border-left: 1px solid $khaki;
+	max-height: 50%;
+}
+.div-img-banner{
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	width: 45vw;
+}
+
+.img-banner-1{
+	background-image: url(asset-path('Launch.png'));
+}
+
+.img-banner-2{
+	background-image: url(asset-path('App-Development.png'));
+}
+
+.img-banner-3{
+	background-image: url(asset-path('Meeting.png'));
+}
+
+.img-banner-4{
+	background-image: url(asset-path('Meeting2.png'));
 }
 
 .slide-banner {
@@ -46,5 +68,5 @@
 	font-family: $body-font;
 	font-size: 25px;
 	letter-spacing: 0.12em;
-	color: $khaki;
+	color: $blue;
 }

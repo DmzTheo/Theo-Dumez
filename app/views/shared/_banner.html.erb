@@ -5,26 +5,26 @@
         <!-- Slides -->
         <div class="swiper-slide">
         	<div class="slide-banner">
-                <%= render "shared/banner-text", myclass: false %>
-				<%= image_tag(asset_path('bulb.png'), class: 'img-banner', alt: 'bulb illustration') %>
+                <%= render "shared/banner-text", myclass: true %>
+                <div class="div-img-banner img-banner-1"></div>
 			</div>
         </div>
         <div class="swiper-slide">
 			<div class="slide-banner">
-                <%= render partial:"shared/banner-text", myclass: true %>
-				<%= image_tag(asset_path('story.png'), class: 'img-banner', alt: 'story illustration') %>
+                <%= render partial:"shared/banner-text", myclass: false %>
+                <div class="div-img-banner img-banner-2"></div>
 			</div>
         </div>
         <div class="swiper-slide">
             <div class="slide-banner">
-                <%= render partial:"shared/banner-text", myclass: true %>
-                <%= image_tag(asset_path('flex-man.png'), class: 'img-banner', alt: 'flex-man illustration') %>
+                <%= render partial:"shared/banner-text", myclass: false %>
+                <div class="div-img-banner img-banner-3"></div>
             </div>
         </div>
         <div class="swiper-slide">
 			<div class="slide-banner">
-                <%= render partial:"shared/banner-text", myclass: true %>
-				<%= image_tag(asset_path('desordre.png'), class: 'img-banner', alt: 'desordre illustration') %>
+                <%= render partial:"shared/banner-text", myclass: false %>
+                <div class="div-img-banner img-banner-4"></div>
 			</div>
         </div>
     </div>
