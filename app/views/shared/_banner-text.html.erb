@@ -1,4 +1,4 @@
-<div class="banner-text #{'myclass' if myclass}">
+<div class="banner-text">
 	<div class="rotating-text">
 	    <p>Propulsez-vous<br>dans l’univers </p>
 	    <p>
@@ -10,9 +10,11 @@
 	        <span class="word blue">du &#160; design</span>
 	    </p>
 	</div>
-	<p class="vertical-text">
-		<%= image_tag(asset_path('arrow.png'), class: "arrow", alt: "fleche") %>
-		scroll down
 	</p>
-	<p class="banner-body-text">Pour attirer et<br>fidéliser vos clients</p>
+	<p class="banner-body-text">
+		Pour attirer et<br>
+		fidéliser vos clients
+	</p>
+	<%= image_tag(asset_path('rocket.svg'), class: "img-rocket", alt: "fusée") %>
 </div>
+<div class="floating-M">M</div>

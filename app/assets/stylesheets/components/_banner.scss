@@ -1,72 +1,39 @@
-.banner-text{
-	display: flex
-}
-
-.img-banner{
-	max-width: 40%;
-	background-color: $white;
-	max-height: 50%;
-}
-.div-img-banner{
-	background-size: cover;
-	background-position: center;
-	height: 80vh;
-	width: 45vw;
-}
-
-.img-banner-1{
-	background-image: url(asset-path('Launch.png'));
-}
-
-.img-banner-2{
-	background-image: url(asset-path('App-Development.png'));
-}
-
-.img-banner-3{
-	background-image: url(asset-path('Meeting.png'));
-}
-
-.img-banner-4{
-	background-image: url(asset-path('Meeting2.png'));
-}
-
-.slide-banner {
+.banner{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 20px 80px;
+	justify-content: space-between;
+	width: 100vw;
+	height: auto;
+	position: relative;
 }
 
-.banner-vide{
-	width: 20%;
-}
-
-.cent{
-	width: 100%;
-}
-
-.vertical-text{
-	transform: rotate(-90deg);
-	position: absolute;
-	left: 70px;
-	bottom: 100px;
-	font-size: 12px;
-	color: $black;
-}
-
-.arrow{
-  transform: rotate(90deg);
-  position: relative;
-  right: 30px;
+.banner-text{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
 }
 
 .banner-body-text{
-	position: absolute;
-	left: 12%;
-	bottom: 20%;
-	font-family: $body-font;
+	margin: 100px 0 50px 10%;
 	font-size: 25px;
-	letter-spacing: 0.12em;
-	color: $blue;
+	letter-spacing: .2rem;
+}
+
+.img-banner{
+	width: 60%;
+}
+
+.floating-M{
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 1000px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color:
+	rgba(0, 0, 0, 0.03);
+	transform: rotate(-12deg);
+	position: absolute;
+	top: -103px;
 }

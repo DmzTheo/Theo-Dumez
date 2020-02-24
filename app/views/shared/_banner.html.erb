@@ -1,31 +1,4 @@
-<!-- Slider main container -->
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-        	<div class="slide-banner">
-                <%= render "shared/banner-text", myclass: true %>
-                <div class="div-img-banner img-banner-1"></div>
-			</div>
-        </div>
-        <div class="swiper-slide">
-			<div class="slide-banner">
-                <%= render partial:"shared/banner-text", myclass: false %>
-                <div class="div-img-banner img-banner-2"></div>
-			</div>
-        </div>
-        <div class="swiper-slide">
-            <div class="slide-banner">
-                <%= render partial:"shared/banner-text", myclass: false %>
-                <div class="div-img-banner img-banner-3"></div>
-            </div>
-        </div>
-        <div class="swiper-slide">
-			<div class="slide-banner">
-                <%= render partial:"shared/banner-text", myclass: false %>
-                <div class="div-img-banner img-banner-4"></div>
-			</div>
-        </div>
-    </div>
+<div class="banner">
+    <%= render "shared/banner-text" %>
+    <%= image_tag(asset_path('Meeting2.png'), alt: 'icone meeting', class: 'img-banner') %>
 </div>

@@ -75,8 +75,8 @@
   -webkit-flex-shrink: 0;
   -ms-flex: 0 0 auto;
   flex-shrink: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   position: relative;
 }
 /* Auto Height */
@@ -85,10 +85,6 @@
   height: auto;
 }
 .swiper-container-autoheight .swiper-wrapper {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
   -webkit-transition-property: -webkit-transform, height;
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
@@ -419,8 +415,6 @@ button.swiper-pagination-bullet {
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  width: 100%;
-  height: 100%;
 }
 .swiper-container-cube.swiper-container-rtl .swiper-slide {
   -webkit-transform-origin: 100% 0;

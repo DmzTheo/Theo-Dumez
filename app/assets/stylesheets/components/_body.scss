@@ -1,4 +1,4 @@
-body{
+html, body{
 	background-color: $white;
 	color: $black;
 	margin: 0;
@@ -19,4 +19,12 @@ p{
 a{
 	font-family: $body-font;
 	color: $black;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
