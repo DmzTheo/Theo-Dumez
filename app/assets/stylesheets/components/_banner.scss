@@ -10,7 +10,7 @@
 .banner-text{
 	display: flex;
 	flex-direction: column;
-	margin-left: 50px;
+	margin-left: 5%;
 }
 
 .banner-body-text{
@@ -21,7 +21,8 @@
 }
 
 .img-banner{
-	width: 60%;
+	max-width: 60vw;
+	max-height: 78vh;
 }
 
 .floating-M{
