@@ -10,19 +10,20 @@
 .banner-text{
 	display: flex;
 	flex-direction: column;
-	margin-left: 5%;
+	position: relative;
+	left: -3vw;
+	margin-left: 5px;
 }
 
 .banner-body-text{
 	margin: 150px 0 50px 10%;
-	font-size: 30px;
+	font-size: 1.6vw;
 	letter-spacing: .2rem;
 	color: $blue;
 }
 
 .img-banner{
-	max-width: 60vw;
-	max-height: 78vh;
+	max-width: 50vw;
 }
 
 .floating-M{
@@ -33,7 +34,7 @@
 	line-height: 100%;
 	display: flex;
 	align-items: center;
-	color: rgba(0, 0, 0, 0.02);
+	color: rgba(0, 0, 0, 0.03);
 	transform: rotate(-12deg);
 	position: absolute;
 	top: -123px;
