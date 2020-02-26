@@ -17,11 +17,28 @@
 .nos-leviers{
 	width: 100%;
 	padding: 45px 0px;
-	margin: 50px auto;
+	margin: 40px auto;
 	position: relative;
 }
 
 .levier {
 	margin: 0 36px;
 	width: 223px;
+}
+
+.levier p{
+	text-align: center;
+}
+
+.agence{
+	margin: 100px auto;
+}
+
+.agence-text{
+	width: 70%;
+	margin-left: 10%;
+}
+
+.justify{
+	text-align: justify;
 }

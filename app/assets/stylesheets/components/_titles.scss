@@ -1,17 +1,20 @@
 .h1, .h2, .h3{
-	text-align: center;
 	color: $teel;
-	font-weight: 500;
-	line-height: 180%;
 	letter-spacing: 0.12em;
 }
 
 .h1{
+	text-align: center;
 	font-size: 25px;
+	line-height: 180%;
+	font-weight: 500;
 }
 
 .h2{
 	font-size: 25px;
+	text-align: left;
+	line-height: 140%;
+	font-weight: 600;
 }
 
 p {
