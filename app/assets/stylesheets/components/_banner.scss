@@ -11,22 +11,23 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	left: -3vw;
-	margin-left: 5px;
+	left: 0;
+	margin-left: 94px;
+	width: 100%;
 }
 
 .banner-body-text{
-	margin: 150px 0 50px 10%;
+	margin: 0 0 0 10%;
 	font-size: 1.6vw;
 	letter-spacing: .2rem;
 	color: $blue;
 }
 
 .img-banner{
-	max-width: 50vw;
+	max-width: 40vw;
 }
 
-.floating-M{
+.floating-TD{
 	font-family: Playfair Display;
 	font-style: normal;
 	font-weight: 900;
@@ -38,4 +39,18 @@
 	transform: rotate(-12deg);
 	position: absolute;
 	top: -123px;
+}
+
+.floating-M{
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 665px;;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.03);
+	transform: rotate(-12deg);
+	position: absolute;
+	top: -122px;
 }

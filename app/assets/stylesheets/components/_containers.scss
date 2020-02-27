@@ -16,7 +16,7 @@
 
 .nos-leviers{
 	width: 100%;
-	padding: 45px 0px;
+	padding: 0 0 45px 0;
 	margin: 40px auto;
 	position: relative;
 }
@@ -33,13 +33,24 @@
 
 .agence{
 	margin: 100px auto;
+	position: relative;
 }
 
 .agence-text{
-	width: 70%;
+	width: 80%;
 	margin-left: 10%;
 }
 
 .justify{
 	text-align: justify;
+}
+
+.vide{
+	width: 100%;
+	height: 130px;	
+}
+
+.vide2{
+	width: 100%;
+	height: 58px;	
 }
