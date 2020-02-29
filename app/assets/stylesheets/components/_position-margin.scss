@@ -9,6 +9,14 @@
 	margin: 0;
 }
 
+.mr5{
+	margin-rigth: 5%;
+}
+
+.ml5{
+	margin-left: 5%;
+}
+
 .self-start{
 	align-self: flex-start;
 }
@@ -37,6 +45,13 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: flex-end;
+}
+
+.flex-between{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .flex-row{
@@ -88,9 +103,9 @@
 	top: 80px;
 }
 
-.rl-50{
+.rl-20{
 	position: relative;
-	left: 50%;	
+	left: 20%;	
 }
 
 .rt-25{
@@ -100,4 +115,8 @@
 
 .font-25{
 	font-size: 2.5vw;
+}
+
+.font-16{
+	font-size: 16px;
 }
