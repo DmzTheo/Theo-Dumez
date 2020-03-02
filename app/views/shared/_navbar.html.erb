@@ -1,8 +1,11 @@
 <div class='navbar'>
-	<div class='logo'>
-		<%= link_to((root_path), title: "Accueil") do %>
-			<%= image_tag(asset_path('Growth-marketing.png'), alt: 'logo data web univers', class: 'img_navbar') %>
-		<% end %>
+	<div class="flex-center">
+		<div class='logo'>
+			<%= link_to((root_path), title: "Accueil") do %>
+				<%= image_tag(asset_path('Growth-marketing.png'), alt: 'logo data web univers', class: 'img_navbar') %>
+			<% end %>
+		</div>
+		<h2 class="ml-5"><span class="black-olive">Data</span><span class="teel">Web</span> <span class="blue">Univers</span></h2>
 	</div>
 	<div class='nav-links'>
 		<%= link_to "Accueil", '#', title: 'Acueil', class: 'nav-link' %>
