@@ -36,3 +36,21 @@
 	background-size: cover;
 	background-position: center;
 }
+
+@media (max-width: 1551px) {
+  .img-SEO{
+		width: 250px;
+	}
+}
+
+@media (max-width: 1433px) {
+  .img-SEO{
+		width: 200px;
+	}
+}
+
+@media (max-width: 1383px) {
+  .img-SEO{
+		display: none;
+	}
+}
