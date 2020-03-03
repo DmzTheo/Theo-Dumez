@@ -22,7 +22,7 @@
 			</div>
 			<p>Expérience Utilisateur (UX)</p>
 		</div>
-		<%= image_tag(asset_path('fond3.png'),alt: 'fond design', class: 'fond-levier3') %>
+		<%= image_tag(asset_path('fond3.png'), alt: 'fond design', class: 'fond-levier3') %>
 	</div>
 </div>
 
@@ -40,5 +40,32 @@
 			<div class="floating-M">TD</div>
 		</div>
 	</div>
+</div>
+
+<div class="referencement flex-center flex-column background-img relative">
+	<div class="flex-start flex-row mt-4 flex-around index1">
+		<%= image_tag(asset_path('referencement.png'), alt: 'referencement icone', class: 'img-referencement mx-5') %>
+		<div class="flex flex-column">
+			<h2 class="mb-5 h1 text-left ml-5 black">
+				Référencement Naturel<br>
+				ou SEO (Search Engine Optimization)
+			</h2>
+			<div class="referencement-text flex-center flex-row flex-around">
+				<div class="referencement-column mx-5 text-center">
+					<h3 class="h3">Référencement</h3>
+					<p class="taupe">Positionnez votre site de manière durable sur les moteurs de recherche</p>
+				</div>
+				<div class="referencement-column mx-5 text-center">
+					<h3 class="h3">Rédaction web</h3>
+					<p class="taupe">L’agence met à votre service sa maitrise de la sémantique</p>
+				</div>
+				<div class="referencement-column mx-5 text-center">
+					<h3 class="h3">Pénalités Google</h3>
+					<p class="taupe">Votre site a subit des penalités Google ? Nous pouvons vous aider</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= image_tag(asset_path('background-curve.svg'), alt: 'fond curve', class: 'absolute t-14 w100 index0') %>
 </div>
 <%= render "shared/footer" %>
