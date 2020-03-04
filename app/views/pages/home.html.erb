@@ -1,22 +1,22 @@
 <%= render "shared/navbar" %>
 <%= render "shared/banner" %>
 
-<div class="nos-leviers flex-center flex-column index0">
+<div class="nos-leviers flex-center flex-column">
 	<div class="leviers flex-center flex-row mt-4">
 		<%= image_tag(asset_path('fond1.png'),alt: 'fond design', class: 'fond-levier1') %>
-		<div class="levier flex-center flex-column">
+		<div class="levier flex-center flex-column index1">
 			<div class="cercle">
 				<%= image_tag(asset_path('computer.svg'), alt: 'computer icon', class: 'card_img') %>
 			</div>
 			<p>Création de site web</p>
 		</div>
-		<div class="levier flex-center flex-column">
+		<div class="levier flex-center flex-column index1">
 			<div class="cercle">
 				<%= image_tag(asset_path('search.svg'), alt: 'search icon', class: 'card_img') %>
 			</div>
 			<p>Référencement (SEO/SEA)</p>
 		</div>
-		<div class="levier flex-center flex-column">
+		<div class="levier flex-center flex-column index1">
 			<div class="cercle">
 				<%= image_tag(asset_path('analytics.svg'), alt: 'analytics icon', class: 'card_img') %>
 			</div>
@@ -27,8 +27,8 @@
 </div>
 
 <div class="agence flex-center flex-row">
-	<div class="agence-img background-img w40-h483"></div>
-	<div class="flex-center w50-h483">
+	<div class="agence-img background-img w40-h483 index1"></div>
+	<div class="flex-center w50-1">
 		<div class="agence-text index1">
 			<h2 class="black my-5 h2 rb-110">DataWeb univers est une société de marketing digital et de référencement</h2>
 			<p class="black my-5 h2 rb-55">
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 	</div>
-	<%= image_tag(asset_path('background-curve.svg'), alt: 'fond curve', class: 'absolute t-14 w100 index0') %>
+	<%= image_tag(asset_path('background-curve.svg'), alt: 'fond curve', class: 'absolute t-14 w100 index0 img-curve') %>
 </div>
 
 <div class="site flex-center flex-column mb-100 relative">
