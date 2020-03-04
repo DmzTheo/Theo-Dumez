@@ -37,6 +37,10 @@
 	background-color: $white;
 }
 
+.cercle-site{
+	width: 270px;
+}
+
 .img-rocket{
 	position: absolute;
 	width: 50px;
@@ -52,6 +56,11 @@
 .background-img{
 	background-size: cover;
 	background-position: center;
+}
+
+.img-curve-left{
+	left: 73px;
+	top: -100px;
 }
 
 @media (max-width: 1551px) {
