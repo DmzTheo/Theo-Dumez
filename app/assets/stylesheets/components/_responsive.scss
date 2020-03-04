@@ -172,6 +172,13 @@
     }
 }
 
+@media (max-width: 587px) {
+    .img-curve-left {
+        left: 0;
+        width: 400px;
+    }
+}
+
 @media (max-width: 577px) {
     .agence-img{
         display: none;
@@ -187,5 +194,37 @@
 @media (max-width: 470px) {
     .mail{
         display: none;
+    }
+}
+
+@media (max-width: 401px) {
+    .img-curve-left {
+        left: 0;
+        width: 300px;
+    }
+}
+
+@media (max-width: 366px) {
+    .ml-5, .mx-5 {
+        margin-left: 1rem !important;
+    }
+    .mr-5, .mx-5 {
+        margin-right: 1rem !important;
+    }
+}
+
+@media (max-width: 356x) {
+    .background-vector-img{
+        display: none;
+    }
+    .ellipse8-img{
+        display: none;
+    }
+}
+
+@media (max-width: 301px) {
+    .img-curve-left {
+        left: 0;
+        width: 200px;
     }
 }
