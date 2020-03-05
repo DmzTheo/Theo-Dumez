@@ -40,7 +40,6 @@ gem 'simple_form'
 gem 'swiper-rails'
 gem 'therubyracer'
 
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

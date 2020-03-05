@@ -16,5 +16,5 @@
 //= require turbolinks
 //= require swiper
 //= require rotating-text
-//= require banner-swipper
+//= require confiance-swipper
 //= require_tree .
