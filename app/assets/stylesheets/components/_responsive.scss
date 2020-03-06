@@ -9,7 +9,9 @@
 		bottom: 0;
 	}
 	.rocket-ellipse-img{
-		display: none;
+		bottom: -176px;
+        left: 30%;
+        width: 250px;
 	}
 	.rotating-text{
 		width: 60vw;
@@ -38,6 +40,11 @@
     .fond-levier1, .fond-levier3{
 		display: none;
 	}
+    .rocket-ellipse-img{
+        bottom: -176px;
+        left: 39%;
+        width: 250px;
+    }
 }
 
 @media (max-width: 1383px) {
