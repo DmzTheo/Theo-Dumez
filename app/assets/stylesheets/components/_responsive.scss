@@ -59,6 +59,42 @@
     }
 }
 
+@media (max-width: 1179px) {
+    .graphique{
+        bottom: 0px;
+    }
+    .ux{
+        top: 0px;
+    }
+    .refonte{
+        top: 0px;
+    }
+    .competence-ligne2{
+        margin-top: 0;
+    }
+    .competence-ligne4{
+        margin-top: 0;
+    }
+    .nos-competences{
+        bottom: 0px;
+    }
+    .charte-graphique{
+        display: none;
+    }
+    .UX-design{
+        display: none;
+    }
+    .trafic-img{
+        display: none;
+    }
+    .communication-img{
+        display: none;
+    }
+    .refrencement-img{
+        display: none;
+    }
+}
+
 @media (max-width: 1161px) {
     .growth-icon {
     	display: none;
@@ -141,6 +177,12 @@
     }
 }
 
+@media (max-width: 901px) {
+    top: -56px;
+    left: 177px;
+    width: 233px;
+}
+
 @media (max-width: 849px) {
     .theo{
         display: none;
@@ -182,6 +224,13 @@
     }
 }
 
+@media (max-width: 619px) {
+    .nos-competences-img {
+        top: -39px;
+        left: 112px;
+    }
+}
+
 @media (max-width: 604px) {
     .site-column {
         margin-bottom: 80px;
@@ -213,6 +262,21 @@
     }
 }
 
+@media (max-width: 451px) {
+    .nos-competences-img {
+        left: 63px;
+    }
+}
+
+@media (max-width: 409px) {
+    .rocket-ellipse-img {
+        left: 20%;
+    }
+    .nos-competences-img {
+        left: 12px;
+    }
+}
+
 @media (max-width: 401px) {
     .img-curve-left {
         left: 0;
@@ -238,6 +302,18 @@
     }
     .rocket-ellipse-img{
         left: 17%;
+    }
+}
+
+@media (max-width: 351px) {
+    .nos-competences-img {
+        left: 0;
+    }
+}
+
+@media (max-width: 349px) {
+    .nos-competences-img {
+        width: 279px;
     }
 }
 
