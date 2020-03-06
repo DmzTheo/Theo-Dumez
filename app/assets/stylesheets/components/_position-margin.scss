@@ -18,6 +18,14 @@
 	margin-top: 100px;
 }
 
+.pb-100{
+	padding-bottom: 100px;
+}
+
+.pt-100{
+	padding-top: 100px;
+}
+
 .cent80{
 	width: 80%;
 	margin: auto;
@@ -43,8 +51,16 @@
 	z-index: 0;
 }
 
+.index-1{
+	z-index: -1;
+}
+
 .w100{
 	width: 100%;
+}
+
+.w300{
+	width: 300px;
 }
 
 .w50{
@@ -90,6 +106,26 @@
 	top: 25px;	
 }
 
+.t-64{
+	top: -64px;
+}
+
+.t-28{
+	top: -28px;
+}
+
 .t-14{
 	top: 14px;
+}
+
+.r-0{
+	right: 0;
+}
+
+.l-23{
+	left: 23px;
+}
+
+.l-0{
+	left: 0;
 }
