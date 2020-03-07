@@ -33,6 +33,7 @@ gem 'popper_js', '~> 1.14.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'dynamic_error_pages'
 gem 'friendly_id'
 gem 'haml'

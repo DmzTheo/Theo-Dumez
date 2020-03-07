@@ -24,6 +24,48 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "CreativeWork",
+        "member": ["Théo Dumez"],
+        "name": "DataWeb univers",
+        "description": "Prendre rendez-vous au cabinet d'ophtalmologie à Miramas des docteurs Buzzacchera Nadine, Giovanni Petretto et Silvia Soare. Chirugie refractive, cataracte, DMLA ...",
+        "url": "https://www.ophtalmo-miramas.com/",
+        "logo": "https://www.ophtalmo-miramas.com/assets/logo_ok-a7b4895674ae588f490975292e1b9e44d74705fdf8a09e21e422d2a6a19b1f31.png",
+        "image": "https://www.ophtalmo-miramas.com/assets/banerbleue-6ded24424e3a0fd0cca0a81e68e01704df7342ead9d6017abc62123aceabf69e.jpg",
+        "telephone": "+33490503350",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "54 Bis Avenue Charles de Gaulle",
+          "addressLocality": "Miramas",
+          "addressRegion": "Provence-Alpes-Côte d'Azur",
+          "postalCode": "13140",
+          "addressCountry": "France"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "43.584449",
+          "longitude": "5.001879"
+        },
+        "hasMap": "https://goo.gl/maps/4bHEJ7DzEVuawpnf7",
+        "openingHours": ["Mo-Th 08:30-19:00", "Fr 08:30-12:30"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+33490503350"
+        },
+        "isAccessibleForFree": true,
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, Bank check",
+        "priceRange": "$$"
+      }
+    </script>
+    <!-- End Structured Data -->
+
+    <%= canonical_tag -%>
+
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>

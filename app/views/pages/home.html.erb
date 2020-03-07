@@ -1,3 +1,16 @@
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "<%= root_url %>"
+    }]
+  }
+</script>
+
 <%= render "shared/navbar" %>
 <%= render "shared/banner" %>
 
