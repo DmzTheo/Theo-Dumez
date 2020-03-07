@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,10 +11,11 @@
     <meta property="og:description" content="<%= meta_description %>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= request.original_url %>">
-    <meta property="og:image" content="<%= asset_path('Growth-marketing.png') %>">
+    <meta property="og:image" content="https://www.data-web-univers.com/<%= asset_path('Growth-marketing.png') %>">
     <meta property="og:site_name" content="Dataweb Univers">
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
+    <link rel="alternate" hreflang="fr" href="https://www.data-web-univers.com/" />
     <link rel="apple-touch-icon" sizes="57x57" href=<%= asset_path('apple-icon-57x57.png') %>>
     <link rel="apple-touch-icon" sizes="60x60" href=<%= asset_path("apple-icon-60x60.png") %>>
     <link rel="apple-touch-icon" sizes="72x72" href=<%= asset_path("apple-icon-72x72.png") %>>
@@ -37,7 +38,7 @@
     <script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
       {
         "@context": "http://www.schema.org",
-        "@type": "CreativeWork",
+        "@type": "Organization",
         "member": ["Théo Dumez"],
         "name": "DataWeb univers",
         "description": "Agence web Aix-en-Provence. Contactez-nous pour créez un site web ou améliorez votre référencement | Théo Dumez",
@@ -48,10 +49,7 @@
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+33643424607"
-        },
-        "currenciesAccepted": "EUR",
-        "paymentAccepted": "Cash, Credit Card, Bank check",
-        "priceRange": "$$"
+        }
       }
     </script>
     <!-- End Structured Data -->
