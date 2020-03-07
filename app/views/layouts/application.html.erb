@@ -34,6 +34,16 @@
     <meta name="msapplication-TileImage" content=<%= asset_path("ms-icon-144x144.png") %>>
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151171093-6"  nonce=<%= request.content_security_policy_nonce %>></script>
+    <script  nonce=<%= request.content_security_policy_nonce %>>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151171093-6');
+    </script>
+
     <!-- Structured Data -->
     <script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
       {
