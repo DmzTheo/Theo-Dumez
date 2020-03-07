@@ -1,2 +1,11 @@
-<h1>Errors#not_found</h1>
-<p>Find me in app/views/errors/not_found.html.erb</p>
+<%= render "shared/navbar" %>
+
+<div class="flex-center flex-column w100">
+	<h1 class="h1 black text-center">Ohoh. Rien ici.</h1>
+	<p class="black-olive text-center">La page que vous cherchez n'existe pas (404).</p>
+	<p class="black-olive text-center">
+		Vous avez peut-être mal saisi l'adresse ou la page a pu être déplacée.<br>
+		Si vous êtes perdu, vous pouvez revenir à la page d'accueil.
+	</p>
+	<%= image_tag(asset_path('page_not_found.svg'), alt: 'page not found', class: 'page_not_found') %>
+</div>

@@ -38,4 +38,12 @@ module TheoDumez
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
+
+  module SeoRubyOnRails
+    class Application < Rails::Application
+      # Deflater
+      # See also : https://robots.thoughtbot.com/content-compression-with-rack-deflater
+      config.middleware.use Rack::Deflater
+    end
+  end
 end

@@ -1,2 +1,14 @@
-<h1>Errors#internal_server_error</h1>
-<p>Find me in app/views/errors/internal_server_error.html.erb</p>
+<%= render "shared/navbar" %>
+
+<div class="flex-center flex-column w100">
+	<h1 class="h1 black text-center">Oups! Pardon.</h1>
+	<p class="black-olive text-center">La page que vous cherchez n'existe pas (404).</p>
+	<p class="black-olive text-center">
+		Quelque chose a mal tourné (500). Notre équipe étudie le problème.
+	</p>
+	<p class="black-olive text-center">
+		Vous pouvez revenir à la page précédente et réessayer,<br>
+		ou si cela ne fonctionne pas, vous pouvez accéder à la page d'accueil.
+	</p>
+	<%= image_tag(asset_path('server_down.svg'), alt: 'server down', class: 'server_down') %>
+</div>

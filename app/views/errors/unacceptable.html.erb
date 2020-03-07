@@ -1,2 +1,10 @@
-<h1>unacceptable#not_found</h1>
-<p>Find me in app/views/errors/unacceptable.html.erb</p>
+<%= render "shared/navbar" %>
+
+<div class="flex-center flex-column w100">
+	<h1 class="h1 black text-center">Désolé</h1>
+	<p class="black-olive text-center">Le changement que vous vouliez a été rejeté (422).</p>
+	<p class="black-olive text-center">
+		Vous avez peut-être essayé de changer quelque chose auquel vous n'aviez pas accès.
+	</p>
+	<%= image_tag(asset_path('access_denied.svg'), alt: 'access denied', class: 'access_denied') %>
+</div>
