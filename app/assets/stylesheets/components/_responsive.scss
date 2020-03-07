@@ -178,9 +178,9 @@
 }
 
 @media (max-width: 901px) {
-    top: -56px;
-    left: 177px;
-    width: 233px;
+    .img_footer{
+        left: 9px;
+    }
 }
 
 @media (max-width: 849px) {
@@ -235,6 +235,9 @@
     .site-column {
         margin-bottom: 80px;
     }
+    .maquettage{
+        display: none;
+    }
 }
 
 @media (max-width: 587px) {
@@ -253,6 +256,15 @@
     }
     h2{
         margin: 0 20px;
+    }
+    .background-vector-img{
+        display: none;
+    }
+}
+
+@media (max-width: 507px) {
+    .confiance-section{
+        display: none;
     }
 }
 
@@ -281,6 +293,9 @@
     .img-curve-left {
         left: 0;
         width: 300px;
+    }
+    .img_navbar{
+        left: 9px;
     }
 }
 
