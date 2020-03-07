@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Agence de marketing Web | Dataweb univers | Théo Dumez</title>
+    <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
+
+    <meta property="og:title" content="<%= meta_title %>">
+    <meta property="og:description" content="<%= meta_description %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:image" content="<%= asset_path('Growth-marketing.png') %>">
+    <meta property="og:site_name" content="Dataweb Univers">
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <link rel="apple-touch-icon" sizes="57x57" href=<%= asset_path('apple-icon-57x57.png') %>>
