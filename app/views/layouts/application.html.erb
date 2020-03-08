@@ -63,6 +63,41 @@
         }
       }
     </script>
+
+    <script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "CreativeWork",
+        "name": "DataWeb univers",
+        "abstract": "Agence web Aix-en-Provence. Contactez-nous pour créez un site web ou améliorez votre référencement | Théo Dumez",
+        "url": "https://data-web-univers.com",
+        "accessMode": ["textual", "visual"],
+        "accessModeSufficient": [
+            {
+                "@type": "ItemList",
+                "itemListElement": ["visual"],
+                "description": "site internet et référencement (SEO/SEA)"
+            },
+            {
+                "@type": "ItemList",
+                "itemListElement": ["textual", "visual"],
+                "description": "carte de visite et flyers"
+            }
+        ],
+        "accessibilityControl": [
+            "fullKeyboardControl",
+            "fullMouseControl"
+        ],
+        "accessibilityHazard": [
+            "noFlashingHazard",
+            "noMotionSimulationHazard",
+            "noSoundHazard"
+        ],
+        "image": "<%= asset_path('digital-marketing-illustration.png') %>",
+        "name": "DataWeb univers",
+        "url": "https://data-web-univers.com"
+      }
+    </script>
     <!-- End Structured Data -->
 
     <%= canonical_tag -%>
