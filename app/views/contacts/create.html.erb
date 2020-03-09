@@ -1,0 +1,21 @@
+<% content_for :meta_title, "Agence marketing web Aix en provence – SEO – site internet" %>
+<% content_for :meta_description, "Créez / Optimiser votre site internet, son référencement | Dataweb Univers : agence de marketing web, SEO / SEA et développement à aix en provence – Théo Dumez" %>
+<%= render "shared/navbar" %>
+
+<div class="flex-center">
+	<div class="w50-1 flex-center flex-column">
+	    <div class="contact-text relative">
+			<% flash.each do |key, value| %>
+			<div>
+				<h1 class="h1 black-olive">
+			     	<a href="#" data-dismiss="alert"></a>
+			        <%= value %>
+			    </h1>
+			</div>
+			<% end %>
+		</div>
+	</div>
+	<%= image_tag(asset_path('thank_you.svg'), alt: 'Merci', class: 'img-contact-congrate') %>
+</div>
+
+<%= render "shared/footer" %>

@@ -5,11 +5,15 @@
 				<%= image_tag(asset_path('Growth-marketing.png'), alt: 'agence marketing web Aix en provence Dataweb Univers logo', class: 'img_navbar mr-3') %>
 			<% end %>
 		</div>
-		<p class="ml-5"><span class="black-olive">Data</span><span class="teel">Web</span> <span class="blue">Univers</span></p>
+		<%= link_to((root_path), title: "Accueil", class: 'nodecoration') do %>
+			<p class="ml-5"><span class="black-olive">Data</span><span class="teel">Web</span> <span class="blue">Univers</span></p>
+		<% end %>
 	</div>
 	<div class='nav-links'>
 		<p class="mx-4 taupe theo">Théo Dumez</p>
-		<p class="mx-4 teel mail">data.univers.theo@gmail.com</p>
+		<%= link_to((contacts_path), title: "Contactez-nous") do %>
+			<p class="mx-4 teel mail">Contactez-nous</p>
+		<% end %>
 		<p class="mx-4 blue telephone">06.43.42.46.07</p>
 	</div>
 </div>

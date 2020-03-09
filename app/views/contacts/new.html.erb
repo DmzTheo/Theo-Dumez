@@ -1,0 +1,41 @@
+<% content_for :meta_title, "Agence marketing web Aix en provence – SEO – site internet" %>
+<% content_for :meta_description, "Créez / Optimiser votre site internet, son référencement | Dataweb Univers : agence de marketing web, SEO / SEA et développement à aix en provence – Théo Dumez" %>
+<%= render "shared/navbar" %>
+
+<div class="flex-center">
+  <div class="w50-1 flex-center flex-column">
+    <div class="contact-text relative">
+      <h1 class="text-center black-olive my-5">Laissez-nous un message</h1>
+
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <div class="my-4">       
+          <%= f.input :prenom, :required => true, label: false, placeholder: "Prénom" %>
+        </div>
+        <div class="my-4">       
+          <%= f.input :name, :required => true, label: false, placeholder: "Nom" %>
+        </div> 
+        <div class="my-4">
+          <%= f.input :email, :required => true, label: false, placeholder: "Email" %>
+        </div>
+        <div class="my-4">
+          <%= f.input :phone, :required => true, label: false, placeholder: "Téléphone" %>
+        </div> 
+        <div class="my-4">
+          <%= f.input :message, :as => :text, :required => true, label: false, placeholder: "Decrivez votre besoin" %>
+        </div> 
+        <div class="display-none">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <div>
+          </br>
+          <div class="w-100 flex-center">
+            <%= f.button :submit, 'Envoyer', :class=> "btn btn-primary text-center" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <%= image_tag(asset_path('Meeting.png'), alt: 'votre projet web', class: 'img-contact-form') %>
+</div>
+
+<%= render "shared/footer" %>

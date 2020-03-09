@@ -16,6 +16,9 @@ Rails.application.routes.draw do
 
 	get 'robots.:format' => 'pages#robots'
 
+	match '/contacts',     to: 'contacts#new',             via: 'get'
+	resources "contacts", only: [:new, :create]
+
 	dynamic_error_pages
   
 end
