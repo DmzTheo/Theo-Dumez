@@ -35,6 +35,7 @@ gem 'popper_js', '~> 1.14.5'
 
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'dynamic_error_pages'
+gem 'figaro'
 gem 'friendly_id'
 gem 'haml'
 gem 'mail_form'

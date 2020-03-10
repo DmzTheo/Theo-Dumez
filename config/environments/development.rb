@@ -42,8 +42,8 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
  
  ActionMailer::Base.sendmail_settings = {
-  :user_name => 'app160975449@heroku.com',
-  :password => 'kdjpbqn28500',
+  :user_name => ENV["SENDGRID_USERNAME"],
+  :password => ENV["SENDGRID_PASSWORD"],
   :address => 'smtp.sendgrid.net',
   :port => 25,
   :authentication => :plain,
