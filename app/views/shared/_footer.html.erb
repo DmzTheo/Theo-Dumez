@@ -19,7 +19,9 @@
 	<div class="contactez-nous flex-column ml5">
 		<h2>Contactez-nous</h2>
 		<p>Théo Dumez</p>
-		<p>data.univers.theo@gmail.com</p>
+		<%= link_to((contacts_path), title: "Contactez-nous") do %>
+			<p>Contactez-nous</p>
+		<% end %>
 		<p>06.43.42.46.07</p>
 	</div>
 </div>
