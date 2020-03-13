@@ -62,7 +62,6 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   config.action_mailer.default charset: 'utf-8'
-  config.action_mailer.delivery_method = :sendmail
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
 
