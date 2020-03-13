@@ -64,15 +64,20 @@ Rails.application.configure do
   config.action_mailer.default charset: 'utf-8'
   config.action_mailer.delivery_method = :sendmail
   config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
 
- ActionMailer::Base.sendmail_settings = {
-  :user_name => ENV["SENDGRID_USERNAME"],
-  :password => ENV["SENDGRID_PASSWORD"],
-  :address => 'smtp.sendgrid.net',
-  :port => 465,
-  :authentication => :plain,
-  :enable_starttls_auto => true
-}
+  # config.action_mailer.default_url_options = { :host => default_url_options }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => "465",
+    # :domain => "mydomain.net",
+    :user_name => ENV["GMAIL_USERNAME"],
+    :password => ENV["GMAIL_PASSWORD"],
+    :authentication => "plain",
+    :enable_starttls_auto => true
+  } 
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
