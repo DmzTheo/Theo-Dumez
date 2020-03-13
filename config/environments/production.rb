@@ -63,7 +63,6 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.action_mailer.default charset: 'utf-8'
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.default_url_options = { :host => 'data-web-univers.com' }
 
@@ -71,7 +70,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :address => 'smtp.gmail.com',
     :port => "465",
-    :domain => 'data-web-univers.com',
+    :domain => 'gmail.com',
     :user_name => ENV["GMAIL_USERNAME"],
     :password => ENV["GMAIL_PASSWORD"],
     :authentication => "plain",
@@ -81,8 +80,6 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
-
-  # config.action_mailer.default_url_options = { :host => "https://www.data-web-univers.com/" }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
