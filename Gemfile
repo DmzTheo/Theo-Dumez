@@ -39,6 +39,7 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'haml'
 gem 'mail_form'
+gem "rack-timeout", require: "rack/timeout/base"
 gem 'redis'
 gem 'sendgrid-ruby'
 gem 'sidekiq'
