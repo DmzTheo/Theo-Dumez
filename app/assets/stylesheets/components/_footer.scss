@@ -9,4 +9,10 @@
 
 .mail-black{
 	border-bottom: 1px solid $black-olive;
+	transition: 0.5s ease-out;
+}
+
+.mail-black:hover{
+	font-size: 22px;
+	transition: 0.2s ease-in;
 }

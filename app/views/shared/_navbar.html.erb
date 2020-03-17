@@ -9,11 +9,37 @@
 			<p class="ml-5"><span class="black-olive">Data</span><span class="teel">Web</span> <span class="blue">Univers</span></p>
 		<% end %>
 	</div>
-	<div class='nav-links'>
-		<p class="mx-4 taupe theo">Théo Dumez</p>
-		<%= link_to((contacts_path), title: "Contactez-nous", rel: "nofollow") do %>
-			<p class="mx-4 teel mail">Contactez-nous</p>
-		<% end %>
-		<p class="mx-4 blue telephone">06.43.42.46.07</p>
+	<div class='nav-links navbar-expand-lg'>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <%= image_tag(asset_path('menu.svg'), alt: 'agence marketing web Aix en provence Dataweb Univers menu', class: 'navbar-toggler-icon') %>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<p class="mx-4 taupe theo">Théo Dumez</p>
+					<%= link_to((contacts_path), title: "Contactez-nous", rel: "nofollow contact-mail") do %>
+				</li>
+						<p class="mx-4 teel mail">Contactez-nous</p>
+					<% end %>
+				<li class="nav-item active">
+					<div class="dropdown">
+						<%= link_to((root_path), title: "Nos-services", class: 'nodecoration dropdown-toggle mx-4 flex-center service-down', href: "#", "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false") do %>
+							<p class="taupe service-text Nos-services">Nos services</p>
+						<% end %>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<%= link_to((referencement_path), title: "Référencement (SEO/SEA)", class: 'dropdown-item') do %>
+								<p class="taupe service-text referencement-link">Référencement</p>
+							<% end %>
+							<%= link_to((creation_site_internet_path), title: "Création de site internet", class: 'dropdown-item') do %>
+								<p class="taupe service-text creation-link">Création de site internet</p>
+							<% end %>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item active">
+					<p class="mx-4 blue telephone">06.43.42.46.07</p>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>

@@ -1,0 +1,123 @@
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Accueil",
+    "item": "<%= root_url %>"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Création de site internet",
+    "item": "<%= contacts_url %>"
+  }]
+}
+</script>
+
+<% content_for :meta_title, "Référencement - Agence marketing web Aix en provence" %>
+<% content_for :meta_description, "Référencement Naturel (SEO), Payant (SEA), boostez votre visibilité ! | Dataweb Univers : agence de marketing web à aix en provence – Théo Dumez" %>
+<% content_for :meta_robots, "index" %>
+
+<%= render "shared/navbar" %>
+
+<!-- Banner -->
+
+<div class="banner relative index1">
+    <div class="w50 flex-center index1">
+		<div class="banner-text">
+			<div class="rotating-text mt-4">
+				<h1 class="rb-55 teel h1 text-center">Référencement naturel et<br>payant ( SEO / SEA ) :</h1>
+			    <p class="khaki-font font-30 rt-80 text-center rl-10">
+			    	Augmentez votre visibilité sur<br>
+			    	Google
+			    </p>
+			</div>
+		</div>
+	</div>
+    <div class="flex-center index1 img-banner-section">
+    	<%= image_tag(asset_path('referencement-SEO_SEA.svg'), alt: 'référencement naturel et payant ( SEO / SEA ) agence marketing web Aix en Provence', class: 'img-banner2') %>
+    </div>
+</div>
+
+<!-- Banner-end -->
+
+<div class="referencement flex-center flex-column background-img relative">
+	<div class="flex-start flex-row mt-4 flex-around index1">
+		<%= image_tag(asset_path('referencement.png'), alt: 'agence marketing web Aix en Provence référencement', class: 'img-referencement mx-5 img-SEO') %>
+		<div class="flex flex-column">
+			<h2 class="mb-5 h2 text-left ml-5 black comment-title">
+				Comment choisir une agence SEO ?
+			</h2>
+			<div class="referencement-text flex-start flex-row flex-around">
+				<div class="referencement-column2 mx-5 text-center">
+					<h3 class="h3">Stratégie d’entreprise</h3>
+					<p class="taupe">Elle doit définir avec vous des objectifs clairs en adéquation avec votre stratégie d’entreprise.</p>
+				</div>
+				<div class="referencement-column2 mx-5 text-center">
+					<h3 class="h3">Travail d’équipe et d’action</h3>
+					<p class="taupe">il faut qu’il y ait une communication régulière et constructive entre l’agence et vous. C’est indispensable pour établir la confiance.</p>
+				</div>
+				<div class="referencement-column2 mx-5 text-center">
+					<h3 class="h3"> Transparence des résultats</h3>
+					<p class="taupe">Votre agence doit vous communiquer des reportings aussi complets et compréhensibles que possible autant pour ses actions que de ses résultats.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= image_tag(asset_path('background-curve.svg'), alt: 'agence marketing web Aix en Provence référencement google', class: 'absolute t-14 w100 index0 img-curve') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo ce-que-SEO index1 mx-auto relative mt-100 mb-100">
+	<h2 class="mb-5 h2 text-left black index1">Qu’est-ce que le SEO ?</h2>
+	<p class="black-olive index1 letter-014">Le SEO (Search Engine Optimization) est l’art d’améliorer le positionnement d’un site sur les moteurs de recherche pour augmenter son trafic et ses revenus.</p>
+	<p class="black-olive index1 letter-014">Son objectif est d’attirer vers vos pages web un trafic de qualité, susceptible de se convertir en prospects, puis en clients</p>
+	<p class="black-olive index1 letter-014">Ainsi, optimiser le référencement est un travail de précision. Il vous permet de capter l’attention de ceux qui sont intéressés par le type de services / de produits que vous proposez.</p>
+	<p class="blue index1 letter-014">Ce trafic généré par le référencement Google a pour vocation d’être pérenne sur le long terme. Contrairement à une campagne publicitaire, le SEO continue d’attirer du trafic (et de produire des bénéfices) même lorsque vous ne l’optimisez plus.</p>
+	<%= image_tag(asset_path('Ellipse-2.svg'), alt: 'agence marketing web Aix en Provence référencement SEO', class: 'absolute index-1 img-curve-left2') %>
+	<%= image_tag(asset_path('Ellipse-8.png'), alt: 'agence marketing web Aix en Provence référencement Search Engine Optimization Objectifs', class: 'absolute index-1 cercle-site4') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mt-200 mb-100">
+	<h2 class="mb-5 h2 text-left black index1">Notre philosophie</h2>
+	<p class="black-olive index1 letter-014">Nous étudions vos problématiques et analysons votre site. Quels sont vos acquis, quels points sont à améliorer et lesquels sont inexistants ? Nous nous assurons que tout soit fait pour satisfaire vos attentes et celles de votre cible.</p>
+	<p class="black-olive index1 letter-014">Nous abordons les choses sous un angle global en évaluant tous les leviers techniques (technologie liée au site web, SEO, SEA, remarketing, linkbuilding, etc.). Une fois un site mis en ligne, il faut l’entretenir et l’optimiser pour attirer du trafic de qualité.</p>
+	<p class="blue index1 letter-014">Que ce soit pour un projet partant de zéro, une refonte ou une optimisation d’un site déjà crée, les services que nous proposons sauront s’accorder à vos besoins ainsi qu’à votre budget.</p>
+	<%= image_tag(asset_path('Ellipse-10.svg'), alt: 'agence marketing web Aix en Provence référencement SEO', class: 'absolute index-1 img-curve-left3') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mt-200 mb-100 flex-between">
+		<h2 class="mb-5 h2 text-left black index1">Qu'est que le référencement naturel SEO on-site ?</h2>
+		<p class="black-olive index1 letter-014">Le référencement naturel on-site regroupe l’architecture de votre site internet et les éléments de vos pages web:</p>
+		<p class="black-olive index1 letter-014 ml-4">
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Les balises html (title, meta description, niveaux de titres Hn (H1, H2, H3, etc.), attribut alt pour les images…)<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Les données structurées dont les rich snippets (extraits enrichis)<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; La structure des URLs<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Les temps de chargement<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Le maillage interne<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Les fichiers robots.txt et sitemap.xml<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; La pertinence des mots-clés<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Le placement des mots-clés dans les contenus et leur densité<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Le champ sémantique autour des mots-clés<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; La qualité et l’originalité du contenu<br>
+			<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; L’affichage sur mobile (mobile friendly) – Responsive<br>
+		</p>
+		<p class="blue index1 letter-014">Ces éléments impactent le référencement naturel d’une page et contribuent à sa bonne indexation par Google.</p>
+	<%= image_tag(asset_path('referencement.png'), alt: 'agence marketing web Aix en Provence référencement SEO on-site', class: 'absolute index-1 refrencement-img-page2') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mb-200">
+	<h2 class="mb-5 h2 text-left black index1">Qu'est que le référencement naturel SEO off-site ?</h2>
+	<p class="black-olive index1 letter-014">Le référencement naturel off-site, également appelé Netlinking, concerne les éléments extérieurs aux pages web :</p>
+	<p class="black-olive index1 letter-014 ml-4">
+		<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; La popularité du site<br>
+		<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Les backlinks (les liens qui pointent vers vos pages en provenance d’autres sites)<br>
+		<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Le benchmarck concurrentiel<br>
+		<%= image_tag(asset_path('Ellipse-18.svg'), alt: 'agence marketing web Aix en Provence référencement SEO 1', class: 'liste-boule') %>&#160;&#160; Les liens sociaux<br>
+	</p>
+	<p class="blue index1 letter-014">Le critérère principal off-page pour Google est la qualité des liens. Il part du principe qu’une page qui plaît aux internautes obtiendra facilement des liens provenant de sites de qualité. 10 backlinks en provenance de quelques sites influents sont plus importants que 100 backlinks venant de sites ayant mauvaise réputation.</p>
+	<%= image_tag(asset_path('Ellipse-8.png'), alt: 'agence marketing web Aix en Provence création de site internet pourquoi ?', class: 'absolute index-1 cercle-site7') %>
+</div>
+
+<%= render "shared/footer" %>

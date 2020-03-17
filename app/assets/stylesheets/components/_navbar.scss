@@ -15,7 +15,7 @@
 	width: auto;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: top;
 }
 
 .nav-link{
@@ -25,10 +25,59 @@
 	color: $black;
 }
 
-.nodecoration:hover{
+a:link{
+	text-decoration:none;
+} 
+
+a.nodecoration:hover{
+	text-decoration: none;
+}
+
+a.nodecoration{
 	text-decoration: none;
 }
 
 .mail{
 	border-bottom: 1px solid $teel;
+	transition: 0.5s ease-out;
+}
+
+.mail:hover{
+	font-size: 22px;
+	transition: 0.2s ease-in;
+}
+
+.service-down{
+	transition: 0.5s ease-out;
+}
+
+.service-down:hover{
+	transition: 0.5s ease-out;
+	font-size: 22px;
+}
+
+.dropdown-menu{
+	background-color: #f5f7fb;
+	border-radius: 20px;
+	border: unset;
+}
+
+.referencement-link{
+	font-size: 20px;
+	transition: 0.5s ease-out;
+}
+
+.referencement-link:hover{
+	font-size: 22px;
+	transition: 0.2s ease-in;
+}
+
+.creation-link{
+	font-size: 20px;
+	transition: 0.5s ease-out;
+}
+
+.creation-link:hover{
+	font-size: 22px;
+	transition: 0.2s ease-in;
 }

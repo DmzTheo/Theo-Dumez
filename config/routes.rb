@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 	match '/contacts',     to: 'contacts#new',             via: 'get'
 	resources "contacts", only: [:new, :create]
 
+	get 'creation-site-internet' => 'services#creation_site_internet'
+	get 'referencement' => 'services#referencement'
+
 	dynamic_error_pages
   
 end

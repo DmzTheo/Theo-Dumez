@@ -1,0 +1,99 @@
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Accueil",
+    "item": "<%= root_url %>"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Création de site internet",
+    "item": "<%= contacts_url %>"
+  }]
+}
+</script>
+
+<% content_for :meta_title, "Création de site - Agence marketing web Aix en provence" %>
+<% content_for :meta_description, "Créez votre site internet en accord avec votre image pour attirez les prospects | Dataweb Univers : agence de marketing web à aix en provence – Théo Dumez" %>
+<% content_for :meta_robots, "index" %>
+
+
+<%= render "shared/navbar" %>
+
+<!-- Banner -->
+
+<div class="banner relative index1">
+    <div class="w50 flex-center index1">
+		<div class="banner-text">
+			<div class="rotating-text mt-4">
+				<h1 class="rb-55 teel h1 text-center">Création de site internet</h1>
+			    <p class="khaki-font font-30 rt-80 text-center mx-auto rl-10">
+			    	Site vitrine / e-commerce /<br>
+			    	logiciel web
+			    </p>
+			</div>
+		</div>
+	</div>
+    <div class="flex-center index1 img-banner-section">
+    	<%= image_tag(asset_path('creation-site-internet.svg'), alt: 'agence marketing web Aix en Provence creation-site-internet', class: 'img-banner3') %>
+    </div>
+</div>
+
+<!-- Banner-end -->
+
+<div class="site flex-center flex-column mb-200 relative mt-5">
+	<h2 class="h2 text-left black index1">Création de votre site internet</h2>
+	<p class='mb-100 budget teel index1 mb-5'>Un besoin, une solution adaptée, un budget maitrisé.</p>
+	<div class="flex-row flex-around w100 index1">
+		<div class="site-column relative text-center flex-center">
+			<p class="index1 black-olive font-25px">Identité graphique Création + Refonte</p>
+			<%= image_tag(asset_path('Ellipse-4.png'), alt: 'agence marketing web Aix en Provence : Identité graphique Création + Refonte', class: 'absolute index0 cercle-site2') %>
+		</div>
+		<div class="site-column relative text-center flex-center">
+			<p class="index1 black-olive font-25px">Visibilité Google Référencement naturel (SEO) & Google Ads (SEA)</p>
+			<%= image_tag(asset_path('Ellipse-4.png'), alt: 'agence marketing web Aix en Provence : Visibilité Google Référencement naturel (SEO) & Google Ads (SEA)', class: 'absolute index0 cercle-site3') %>
+		</div>
+		<div class="site-column relative text-center flex-center">
+			<p class="index1 black-olive font-25px">Site sécurisé avec accès au back-office</p>
+			<%= image_tag(asset_path('Ellipse-7.png'), alt: 'agence marketing web Aix en Provence : Site sécurisé avec accès au back-office', class: 'absolute index0 cercle-site2') %>
+		</div>
+	</div>
+	<p class="mt-100 maquettage2 teel index1 text-center">Nous nous déplaçons dans toute la région d’Aix en Provence et des alentours pour étudier avec vous votre projet</p>
+	<%= image_tag(asset_path('Ellipse-2.svg'), alt: 'développeur web', class: 'absolute index0 img-curve-left') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mb-100">
+	<h2 class="mb-5 h2 text-left black index1">Pourquoi créer un site internet ?</h2>
+	<p class="black-olive index1 letter-014">Le site web est aujourd’hui un incontournable dans votre communication sur Internet. Face à la croissance de la recherche en ligne, il est un outil marketing idéal pour <strong>attirer les prospects et les convertir en clients.</strong></p>
+	<p class="black-olive index1 letter-014">Aujourd’hui, ces derniers ne souhaitent plus « subir » la publicité. Ils veulent être <strong>séduits par du contenu innovant qui apporte de la valeur ajoutée.</strong></p>
+	<p class="black-olive index1 letter-014">Seul un site internet peut vous offrir de telles opportunités. Il contribue à votre visibilité, et votre e-réputation. Un professionnel présent sur le web est considéré comme sérieux. Il l’est d’autant plus si son site est <strong>propre, fonctionnel et design.</strong></p>
+	<%= image_tag(asset_path('Ellipse-8.png'), alt: 'agence marketing web Aix en Provence création de site internet pourquoi ?', class: 'absolute index-1 cercle-site5') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mt-200 mb-100">
+	<h2 class="mb-5 h2 text-left black index1">Un site en accord avec votre image</h2>
+	<p class="black-olive index1 letter-014">Chez DataWeb Univers, vous trouverez une équipe capable de répondre à l’ensemble de vos problématiques de communication web : l’affirmation de votre image au travers du design du site, de votre clientèle et de votre visibilité. </p>
+	<p class="blue index1 letter-014">Nous abordons les choses sous un angle global en évaluant tous les leviers techniques (technologie liée au site web, SEO, SEA, remarketing, netlinking, etc.). Une fois un site mis en ligne, il faut l’entretenir et l’optimiser pour attirer du trafic de qualité.</p>
+	<%= image_tag(asset_path('Ellipse-10.svg'), alt: 'agence marketing web Aix en Provence référencement SEO', class: 'absolute index-1 img-curve-left4') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mt-200 mb-100 flex-between">
+	<div class="qu-est-ce-que-le-seo-text">
+		<h2 class="mb-5 h2 text-left black index1">Devenez propriétaire de votre site</h2>
+		<p class="black-olive index1 letter-014">Une fois livré, vous devenez propriétaire de votre site internet. Beaucoup d’agences vous proposent des locations longue durée sans option d’achat, pas nous. Par ailleurs, toutes nos technologies utilisées sont open-source.</p>
+		<p class="blue index1 letter-014">A nos côtés, le produit livré pourra tout de même évoluer durablement dans le temps de manière indépendante.</p>
+	</div>
+	<%= image_tag(asset_path('referencement.png'), alt: 'agence marketing web Aix en Provence référencement SEO', class: 'refrencement-img-page') %>
+</div>
+
+<div class="qu-est-ce-que-le-seo index1 mx-auto relative mb-200">
+	<h2 class="mb-5 h2 text-left black index1">Distinguez-vous sur le web !</h2>
+	<p class="black-olive index1 letter-014">Vous aimeriez vous aussi être différent, sortir du lot, faire valoir votre valeur ajoutée dans un monde numérique très concurrentiel ?</p>
+	<p class="black-olive index1 letter-014">Contactez-nous afin de vous aider, d’obtenir des réponses et des solutions personnalisées.</p>
+	<%= image_tag(asset_path('Ellipse-8.png'), alt: 'agence marketing web Aix en Provence création de site internet pourquoi ?', class: 'absolute index-1 cercle-site6') %>
+</div>
+
+<%= render "shared/footer" %>

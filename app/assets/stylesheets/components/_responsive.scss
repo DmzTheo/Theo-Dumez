@@ -2,7 +2,7 @@
     .img-SEO{
 		width: 250px;
 	}
-	.img-banner {
+	.img-banner, img-banner2, img-banner3 {
     	max-width: 35vw;
     }
     .rb-55{
@@ -108,6 +108,9 @@
     .h1 {
         margin-left: 10px;
     }
+    .img-curve-left2{
+        display: none;
+    }
 }
 
 @media (max-width: 1087px) {
@@ -117,9 +120,6 @@
 }
 
 @media (max-width: 1070px) {
-    .telephone {
-    	display: none;
-    }
     .h1 {
     	font-size: 30px;
     }
@@ -128,6 +128,7 @@
     }
     .referencement{
     	background-color: #f5f7fb;
+        height: auto;
     }
 }
 
@@ -156,6 +157,12 @@
         width: 100%;
         margin: 0 20px;
     }
+    .referencement {
+        margin-top: 150px;
+    }
+    .comment-title{
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 966px) {
@@ -183,14 +190,24 @@
     }
 }
 
-@media (max-width: 849px) {
-    .theo{
+@media (max-width: 874px) {
+    .refrencement-img-page2{
         display: none;
+    }
+}
+
+@media (max-width: 744px) {
+    .rl-10 {
+        position: relative;
+        left: 0;
     }
 }
 
 @media (max-width: 724px) {
     .referencement-column {
+        margin-top: 40px;
+    }
+    .referencement-column2 {
         margin-top: 40px;
     }
 }
@@ -209,9 +226,12 @@
     .rt-80 {
         top: 0;
     }
-}
-
-@media (max-width: 699px) {
+    .refrencement-img-page{
+        display: none;
+    }
+    .qu-est-ce-que-le-seo-text{
+        width: 100%;
+    }
     .rotating-text .rotating-text-word{
         display: none;
     }
@@ -221,6 +241,15 @@
     }
     .referencement {
         height: auto;
+    }
+}
+
+@media (max-width: 644px) {
+    .cercle-site7{
+        left: 0;
+    }
+    .cercle-site4{
+        left: 0;
     }
 }
 
@@ -262,14 +291,17 @@
     }
 }
 
-@media (max-width: 507px) {
-    .confiance-section{
-        display: none;
+@media (max-width: 564px) {
+    .cercle-site5{
+        left: 0;
+    }
+    .cercle-site6{
+        left: 0;
     }
 }
 
-@media (max-width: 470px) {
-    .mail{
+@media (max-width: 507px) {
+    .confiance-section{
         display: none;
     }
 }
@@ -277,6 +309,12 @@
 @media (max-width: 451px) {
     .nos-competences-img {
         left: 63px;
+    }
+}
+
+@media (max-width: 445px) {
+    .cercle-site7{
+        display: none;
     }
 }
 
@@ -290,12 +328,18 @@
 }
 
 @media (max-width: 401px) {
-    .img-curve-left {
+    .img-curve-left, .img-curve-left2 {
         left: 0;
         width: 300px;
     }
     .img_navbar{
         left: 9px;
+    }
+    .cercle-site5{
+        display: none;
+    }
+    .cercle-site6{
+        display: none;
     }
 }
 
@@ -333,7 +377,7 @@
 }
 
 @media (max-width: 301px) {
-    .img-curve-left {
+    .img-curve-left, .img-curve-left2 {
         left: 0;
         width: 200px;
     }
