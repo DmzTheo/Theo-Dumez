@@ -13,7 +13,6 @@
 //= require rails-ujs
 //= require popper
 //= require activestorage
-//= require turbolinks
 //= require swiper
 //= require rotating-text
 //= require confiance-swipper
