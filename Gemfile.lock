@@ -74,7 +74,7 @@ GEM
       msgpack (~> 1.0)
     bootsnap (1.4.6-java)
       msgpack (~> 1.0)
-    bootstrap (4.2.1)
+    bootstrap (4.3.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.14.3, < 2)
       sassc-rails (>= 2.0.0)
@@ -285,7 +285,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootsnap
-  bootstrap (~> 4.2.1)
+  bootstrap (~> 4.3.1)
   byebug
   canonical-rails!
   capybara (>= 2.15)

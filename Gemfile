@@ -34,7 +34,7 @@ gem 'popper_js', '~> 1.14.5'
 # gem 'mini_magick', '~> 4.8'
 
 gem "autoprefixer-rails"
-gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'dynamic_error_pages'
 gem 'figaro'
