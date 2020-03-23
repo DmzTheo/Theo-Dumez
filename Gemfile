@@ -33,6 +33,8 @@ gem 'popper_js', '~> 1.14.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+gem "autoprefixer-rails"
+gem 'bootstrap', '~> 4.2.1'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'dynamic_error_pages'
 gem 'figaro'
@@ -44,8 +46,9 @@ gem 'redis'
 gem 'sendgrid-ruby'
 gem 'sidekiq'
 gem 'simple_form'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'swiper-rails'
-gem 'therubyracer'
+# gem 'therubyracer'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
