@@ -44,7 +44,7 @@
           <%= f.input :message, :as => :text, :required => true, label: false, placeholder: "Decrivez votre besoin" %>
         </div>
         <div class="my-4">
-          <%= recaptcha_tags %>
+          <%= recaptcha_tags :ssl => true %>
         </div>
         <div class="display-none">
           <%= f.input :nickname, :hint => 'Leave this field blank!' %>
