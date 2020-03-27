@@ -32,6 +32,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
+
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
@@ -49,7 +50,7 @@ Rails.application.configure do
     :password => ENV["GMAIL_PASSWORD"],
     :authentication => "plain",
     :enable_starttls_auto => true
-  } 
+  }
   
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
