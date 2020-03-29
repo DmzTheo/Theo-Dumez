@@ -111,9 +111,6 @@
     <%= render 'shared/flashes' %>
     <%= yield %>
      <script src="https://unpkg.com/aos@next/dist/aos.js" nonce=<%= request.content_security_policy_nonce %>></script>
-      <script nonce=<%= request.content_security_policy_nonce %>>
-        AOS.init();
-      </script>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
