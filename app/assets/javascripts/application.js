@@ -19,4 +19,5 @@
 //= require swiper
 //= require rotating-text
 //= require confiance-swipper
+//= require aos
 //= require_tree .
