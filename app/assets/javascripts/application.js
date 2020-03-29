@@ -16,8 +16,8 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require aos
-//= require confiance-swipper
 //= require swiper
-//= require rotating-text
+//= require confiance-swipper
 //= require modal
+//= require rotating-text
 //= require_tree .
