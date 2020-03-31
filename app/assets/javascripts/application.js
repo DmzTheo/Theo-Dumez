@@ -16,6 +16,7 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require aos
+//= require aosjs
 //= require swiper
 //= require confiance-swipper
 //= require modal
