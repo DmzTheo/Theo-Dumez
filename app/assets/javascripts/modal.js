@@ -1,3 +1,3 @@
-// $(window).on('load',function(){
-    // $('#ModalCenter').modal('show');
-// });
+$(window).on('load',function(){
+    $('#ModalCenter').modal('show');
+});
