@@ -110,6 +110,9 @@
   <body>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js" nonce=<%= request.content_security_policy_nonce %>></script>
+
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>

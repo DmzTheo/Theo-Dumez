@@ -21,4 +21,5 @@
 //= require confiance-swipper
 //= require modal
 //= require rotating-text
+//= require anime-banner
 //= require_tree .

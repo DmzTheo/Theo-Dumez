@@ -306,6 +306,12 @@
     }
 }
 
+@media (max-width: 480px) {
+    .bleu-cercle-banner{
+        display: none;
+    }
+}
+
 @media (max-width: 451px) {
     .nos-competences-img {
         left: 63px;
