@@ -49,7 +49,7 @@ gem 'sidekiq'
 gem 'simple_form'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'swiper-rails'
-gem 'therubyracer'
+gem 'mini_racer'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
