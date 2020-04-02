@@ -29,8 +29,6 @@ module TheoDumez
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.middleware.use Rack::Deflater
-
     config.exceptions_app = self.routes
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -46,6 +44,8 @@ module TheoDumez
       # Deflater
       # See also : https://robots.thoughtbot.com/content-compression-with-rack-deflater
       config.middleware.use Rack::Deflater
+
+      config.assets.js_compressor  = :uglifier
     end
   end
 end
