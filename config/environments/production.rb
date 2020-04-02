@@ -61,6 +61,8 @@ Rails.application.configure do
     'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
   }
 
+  config.assets.js_compressor = Uglifier.new(harmony: true)
+
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "Theo_Dumez_production"

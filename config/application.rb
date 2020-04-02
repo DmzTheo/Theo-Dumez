@@ -44,8 +44,6 @@ module TheoDumez
       # Deflater
       # See also : https://robots.thoughtbot.com/content-compression-with-rack-deflater
       config.middleware.use Rack::Deflater
-
-      config.assets.js_compressor  = :uglifier
     end
   end
 end
