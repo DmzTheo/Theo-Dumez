@@ -56,6 +56,11 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
+  config.public_file_server.headers = {
+    'Cache-Control' => "public, s-maxage=#{365.days.to_i}, maxage=#{180.days.to_i}",
+    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+  }
+
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "Theo_Dumez_production"
