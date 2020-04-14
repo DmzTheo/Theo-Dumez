@@ -65,6 +65,7 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    anime_js_rails (1.1.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     autoprefixer-rails (9.7.5)
@@ -292,6 +293,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  anime_js_rails
   autoprefixer-rails
   bootsnap
   bootstrap (~> 4.3.1)
