@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 	<div class="admin-bar">
 		<div class="flex-between w-80">
-			<p class="mx-4 mt-0 font-16">Bienvenue <%= "#{current_user.nom}" %></p>
+			<p class="mx-4 mt-0 font-16 color-7e828e">Bienvenue <%= "#{current_user.nom}" %></p>
 			<p class="mx-4 mt-0 font-16"><%= link_to "Se déconnecter", destroy_user_session_path, class: 'mx-4', method: :delete, data: { confirm: 'Vous allez vous déconnecter' } %></p>
 		</div>
 	</div>
