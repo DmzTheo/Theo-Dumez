@@ -59,6 +59,12 @@
     }
 }
 
+@media (max-width: 1271px) {
+    .blog-show{
+        width: 65%;
+    }
+}
+
 @media (max-width: 1179px) {
     .graphique{
         bottom: 0px;
@@ -110,6 +116,12 @@
     }
     .img-curve-left2{
         display: none;
+    }
+}
+
+@media (max-width: 1090px) {
+    .blog-show{
+        width: 60%;
     }
 }
 
@@ -165,9 +177,21 @@
     }
 }
 
+@media (max-width: 1003px) {
+    .article {
+        width: 50%;
+    }
+}
+
 @media (max-width: 966px) {
     .rb-110{
         bottom: 0;
+    }
+}
+
+@media (max-width: 953px) {
+    .blog-show{
+        width: 50%;
     }
 }
 
@@ -193,6 +217,12 @@
 @media (max-width: 874px) {
     .refrencement-img-page2{
         display: none;
+    }
+}
+
+@media (max-width: 763px) {
+    .blog-show{
+        width: 100%;
     }
 }
 
@@ -266,6 +296,9 @@
 @media (max-width: 604px) {
     .maquettage{
         display: none;
+    }
+    .article {
+        width: 100%;
     }
 }
 

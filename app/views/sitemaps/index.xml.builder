@@ -10,4 +10,13 @@ xml.tag! 'urlset', 'xmlns' => "http://www.sitemaps.org/schemas/sitemap/0.9" do
 	xml.tag! 'url' do
 		xml.tag! 'loc', creation_site_internet_url
 	end
+	xml.tag! 'url' do
+		xml.tag! 'loc', blogs_url
+	end
+
+	@blogs.each do | blog |
+		xml.tag! 'url' do
+			xml.tag! 'loc', blog_url(blog)
+		end
+	end
 end

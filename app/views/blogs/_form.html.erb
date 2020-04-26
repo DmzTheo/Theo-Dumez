@@ -1,0 +1,16 @@
+<%= simple_form_for(@blog) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <div class="my-5"><%= f.input :name, label: "Nom : entre 42 et 50 caractères" %></div>
+    <div class="my-5"><%= f.file_field :image %></div>
+    <div class="my-5"><%= f.input :descriptionindex, label: "Description : entre 131 et 149 caractères" %></div>
+    <div class="my-5"><%= f.input :description, input_html: { class: 'tinymce', id: 'description-blog' } %></div>
+  </div>
+
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn btn-primary my-5' %>
+  </div>
+<% end %>

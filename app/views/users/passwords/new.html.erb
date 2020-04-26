@@ -1,0 +1,33 @@
+<% content_for :meta_title, "Agence marketing web Aix en provence – SEO – site internet" %>
+<% content_for :meta_description, "Créez / Optimiser votre site internet, son référencement | Dataweb Univers : agence de marketing web, SEO / SEA et développement à aix en provence – Théo Dumez" %>
+<% content_for :meta_robots, "noindex" %>
+
+<%= render "shared/navbar" %>
+
+<div class="flex-center mt-5">
+  <div class="w50-1 flex-center flex-column">
+    <div class="contact-text relative">
+      <h1 class="h1 black-olive mb-5"><%= t(".forgot_your_password") %></h1>
+
+      <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-inputs">
+          <%= f.input :email,
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" } %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, t(".send_me_reset_password_instructions"), class: "btn btn-outline-primary my-5" %>
+        </div>
+      <% end %>
+
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+  <%= image_tag(asset_path('push_notifications.svg'), alt: 'créer un compte', class: 'img-contact-form') %>
+</div>
+
+<%= render "shared/footer" %>

@@ -1,3 +1,10 @@
+<% if user_signed_in? %>
+	<div class="admin-bar">
+		<p class="mx-4">Bienvenue <%= "#{current_user.nom}" %></p>
+		<p class="mx-4">-</p>
+		<p><%= link_to "Se déconnecter", destroy_user_session_path, class: 'mx-4', method: :delete, data: { confirm: 'Vous allez vous déconnecter' } %></p>
+	</div>
+<% end %>
 <div class='navbar'>
 	<div class="flex-center">
 		<div class='logo'>
@@ -16,7 +23,9 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<p class="mx-4 taupe theo">Théo Dumez</p>
+					<%= link_to((blogs_path), title: "Blog", class: 'nodecoration referencement-link') do %>
+						<p class="mx-4 taupe blog-link referencement-link">Blog</p>
+					<% end %>
 				</li>
 				<li>
 					<%= link_to((contacts_path), title: "Contactez-nous", rel: "nofollow contact-mail") do %>
@@ -25,10 +34,10 @@
 				</li>
 				<li class="nav-item active">
 					<div class="dropdown">
-						<%= link_to((root_path), title: "Nos-services", class: 'nodecoration dropdown-toggle mx-4 flex-center service-down', href: "#", "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false") do %>
-							<p class="taupe service-text Nos-services">Nos services</p>
+						<%= link_to((root_path), title: "Nos-services", class: 'nodecoration dropdown-toggle mx-4 flex-center service-down', href: "#", "role": "button", id: "dropdownMenuLink", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false") do %>
+							<p class="taupe service-text service-down">Nos services</p>
 						<% end %>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<%= link_to((referencement_path), title: "Référencement (SEO/SEA)", class: 'dropdown-item') do %>
 								<p class="taupe service-text referencement-link">Référencement</p>
 							<% end %>
@@ -39,7 +48,7 @@
 					</div>
 				</li>
 				<li class="nav-item active">
-					<p class="mx-4 blue telephone">06.43.42.46.07</p>
+					<p class="mx-4 blue telephone">Théo Dumez</p>
 				</li>
 			</ul>
 		</div>

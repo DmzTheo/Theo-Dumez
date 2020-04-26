@@ -1,0 +1,33 @@
+<div class="commentaires bg-F5F7FB">
+  <div class="commentaires-index">
+    <h3 class="mx-5 mt-3 mb-5">Commentaires :</h3>
+    <% if @blog.comments != nil %>
+      <% if @blog.comments.size > 0 %>
+        <% @blog.comments.each do |comment| %>
+          <div class="comment-box py-4 mb-5 flex flex-column relative">
+            <div class="flex flex-row">
+              <p class="mr-3 mt-0 font-18"><strong><%= comment.user.nom %></strong></p>
+              <p class="mt-0 font-18"><%= comment.created_at.strftime("Le %d/%m/%Y à %Hh%M") %></p>
+            </div>
+            <p class="font-18 color-616671 mx-2"><%= comment.comment %></p>
+            <% if policy(comment).edit? %>
+              <%= link_to(edit_blog_comment_path(@blog, comment), title: 'éditer', rel: 'nofollow') do %>
+               <%= image_tag(asset_path('edit.svg'), alt: 'editer', class: 'img-edit absolute index1') %>
+              <% end %>
+            <% end %>
+            <% if policy(comment).destroy? %>
+              <%= link_to(blog_comment_path(@blog, comment), rel: 'nofollow', title: 'supprimer', method: :delete, data: { confirm: 'Vous allez supprimer cet article' }) do %>
+                <%= image_tag(asset_path('bin.svg'), alt: 'supprimer', class: 'img-bin absolute index1') %>
+              <% end %>
+            <% end %>
+          </div>
+        <% end %>
+      <% else %>
+        <p class="font-18 color-616671 mx-2 mt-0 mb-4">Il n'y a pas de Commentaires pour l'instant</p>
+      <% end %>
+    <% end %>
+    <% if policy(Comment).new? %>
+      <%= link_to('écrire un commentaire', new_blog_comment_path(@blog), rel: 'nofollow', title: 'écrire un commentaire', class: "btn btn-outline-primary mt-3") %>
+    <% end %>
+  </div>
+</div>

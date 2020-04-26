@@ -1,0 +1,92 @@
+---
+fr:
+  activerecord:
+    attributes:
+      commontator/comment:
+        body: Commentaire
+        creator: Createur
+        editor: Editeur
+        thread: Discussion
+        parent: Commentaire parent
+      commontator/subscription:
+        subscriber: Abonné(e)
+        thread: Discussion
+      commontator/thread:
+        commontable: Commentable
+    errors:
+      models:
+        commontator/comment:
+          attributes:
+            body:
+              double_posted: est un doublon d'un autre commentaire.
+    models:
+      commontator/comment:
+        one: commentaire
+        other: commentaires
+      commontator/subscription:
+        one: abonnement
+        other: abonnements
+      commontator/thread:
+        one: imbriqué
+        other: imbriqués
+  commontator:
+    anonymous: Anonyme
+    comment:
+      actions:
+        cancel: Annuler
+        confirm_delete: êtes-vous sûr de vouloir supprimer ce commentaire ?
+        create: Poster le commentaire
+        delete: Supprimer
+        edit: Editer
+        new: Nouveau commentaire
+        undelete: Annuler la suppression
+        update: Modifier le commentaire
+        reply: Répondre au commentaire.
+      errors:
+        already_deleted: Ce commentaire a déjà été supprimé.
+        create: "Ce commentaire n'a pas pu être publié car:"
+        not_deleted: Ce commentaire n'est pas supprimé.
+        update: "Ce commentaire n'a pas pu être modifié car:"
+      status:
+        created_at: Posté le %{created_at}.
+        deleted_by: Commentaire supprimé par %{deleter_name}.
+        updated_at: Dernière modification par %{editor_name} le %{updated_at}.
+        replying: Répondre à %{creator_name}
+        reply_pages: "Pages de réponse:"
+    email:
+      comment_created:
+        body: "%{creator_name} a commenté sur %{commontable_name}:"
+        subject: "%{creator_name} a laissé un commentaire sur %{commontable_name}"
+      thread_link_html: <a href="%{comment_url}">Cliquez ici</a> pour voir tous les commentaires sur %{commontable_name}.
+    require_login: Vous devez vous connecter avant de pouvoir poster un commentaire.
+    subscription:
+      actions:
+        subscribe: S'abonner
+        unsubscribe: Se désabonner
+      errors:
+        already_subscribed: Vous êtes déjà abonné à cette discussion.
+        not_subscribed: Vous n'êtes pas abonné à cette discussion.
+    thread:
+      actions:
+        show_all: Afficher tous les commentaires
+        filter: Filtrer les commentaires
+        close: Fermer la discussion
+        confirm_close: Voulez-vous vraiment clore cette discussion ?
+        reopen: Rouvrir la discussion
+        show: Afficher les commentaires
+        hide: Masquer les commentaires
+      errors:
+        already_closed: Cette discussion est déjà close.
+        not_closed: Cette discussion n'est pas close.
+      status:
+        cannot_post: Aucun nouveau commentaire ne peut être publié pour le moment.
+        closed: Commentaires (fermé par %{closer_name})
+        open: commentaires
+        pages: "Pages de commentaires:"
+  time:
+    formats:
+      commontator: "%d %b %Y à %I:%M%p %Z"
+    am: am
+    pm: pm
+  date: 
+    abbr_month_names: que faut-il afficher ?

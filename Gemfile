@@ -10,7 +10,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+# gem 'sass-rails'
+gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -33,23 +34,30 @@ gem 'popper_js', '~> 1.14.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+gem 'acts_as_votable'
 gem "autoprefixer-rails"
 gem 'bootstrap', '~> 4.3.1'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
+gem 'carrierwave', '~> 2.0'
+gem 'devise'
+gem 'devise-i18n'
 gem 'dynamic_error_pages'
 gem 'figaro'
 gem 'friendly_id'
 gem 'haml'
+gem 'jquery-rails'
 gem 'mail_form'
+gem 'mini_racer'
+gem 'pundit'
 gem "rack-timeout", require: "rack/timeout/base"
 gem "recaptcha"
 gem 'redis'
 gem 'sendgrid-ruby'
 gem 'sidekiq'
 gem 'simple_form'
+gem 'social-share-button'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'swiper-rails'
-gem 'mini_racer'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

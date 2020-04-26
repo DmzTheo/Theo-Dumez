@@ -97,17 +97,18 @@
     <!-- End Structured Data -->
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <%= javascript_pack_tag 'application' %>
 
+    <script src='https://cdn.tiny.cloud/1/<%= ENV["TINY_API_KEY"] %>/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+        <%= javascript_pack_tag 'application' %>
     </script>
 
     <%= canonical_tag -%>
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+
   </head>
-  <body>
+  <body class="<%= controller_name %> <%= action_name %>">
     <%= render 'shared/flashes' %>
     <%= yield %>
     

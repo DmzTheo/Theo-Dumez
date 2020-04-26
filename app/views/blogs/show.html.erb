@@ -1,0 +1,159 @@
+<% content_for :meta_title, "Web Mag – #{@blog.name}" %>
+<% content_for :meta_description, "#{@blog.descriptionindex}" %>
+<% content_for :meta_robots, "index" %>
+
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Accueil",
+    "item": "<%= root_url %>"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Blog",
+    "item": "<%= blogs_url %>"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "<%= @blog.name %>",
+    "item": "<%= blog_url(@blog) %>"
+  }]
+}
+</script>
+
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "headline": "<%= @blog.name %>",
+  "image": "<%= asset_path(@blog.image) %>",
+  "datePublished": "<%= @blog.created_at.strftime("%Y-%m-%d") %>",
+  "dateModified": "<%= @blog.updated_at.strftime("%Y-%m-%d") %>",
+  "creator": "Dataweb Univers",
+  "author": "Dataweb Univers",
+  "articleBody": "<%= @blog.descriptionindex.first(100) %>...",
+  "mainEntityOfPage": "True"
+}
+</script>
+
+<%= render "shared/navbar" %>
+
+<h1 class="h1 black letter-009 mx-5">
+  <%= @blog.name %>
+</h1>
+<div class="articles-index flex flex-row">
+	<div class="blog-show relative">
+		<div class="image-like_partage flex justify-content-center align-items-center">
+			<%= image_tag(asset_path(@blog.image), alt: @blog.name, class: 'img-blog_view my-4 mx-auto') %>
+		</div>
+
+		<div class="description-blog my-4">
+			<%= @blog.description.html_safe %>
+		</div>
+
+    <% if user_signed_in? %>
+      <% if current_user.voted_up_on? @blog %>
+        <div class="flex flex-row mt-3">
+          <%= link_to(unlike_blog_path(@blog), method: :put, rel: 'nofollow', title: 'unlike', class: 'nodecoration flex bg-F5F7FB link-like flex-center') do %>
+            <%= image_tag(asset_path('like2.svg'), alt: 'unlike', class: 'img-like') %>
+            <p class="mx-2 font-18 mt-0">J'aime</p>
+            <p class="like-nbr mt-0"><%= @blog.votes_for.size %></p>
+          <% end %>
+          <div class="social-share-button-relative m-0 p-0">
+            <%= social_share_button_tag(@blog.name, rel: 'nofollow') %>
+          </div>
+        </div>
+      <% else %>
+        <div class="flex flex-row mt-3">
+          <%= link_to(like_blog_path(@blog), method: :put, rel: 'nofollow', title: 'like', class: 'nodecoration flex bg-F5F7FB link-like flex-center') do %>
+            <%= image_tag(asset_path('like.svg'), alt: 'like', class: 'img-like') %>
+            <p class="mx-2 font-18 mt-0">J'aime</p>
+            <p class="like-nbr mt-0"><%= @blog.votes_for.size %></p>
+          <% end %>
+          <div class="social-share-button-relative m-0 p-0">
+            <%= social_share_button_tag(@blog.name, rel: 'nofollow') %>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="flex flex-row mt-3">
+        <%= link_to(like_blog_path(@blog), method: :put, rel: 'nofollow', title: 'like', class: 'nodecoration flex bg-F5F7FB link-like flex-center') do %>
+          <%= image_tag(asset_path('like.svg'), alt: 'like', class: 'img-like') %>
+          <p class="mx-2 font-18 mt-0">J'aime</p>
+          <p class="like-nbr mt-0"><%= @blog.votes_for.size %></p>
+        <% end %>
+        <div class="social-share-button-relative m-0 p-0">
+          <%= social_share_button_tag(@blog.name, rel: 'nofollow') %>
+        </div>
+      </div>
+    <% end %>
+
+		<% if policy(@blog).edit? %>
+      <%= link_to(edit_blog_path(@blog), title: 'éditer', rel: 'nofollow') do %>
+       <%= image_tag(asset_path('edit.svg'), alt: 'editer', class: 'img-edit absolute index1') %>
+      <% end %>
+    <% end %>
+    <% if policy(@blog).destroy? %>
+      <%= link_to(@blog, rel: 'nofollow', title: 'supprimer',method: :delete, data: { confirm: 'Vous allez supprimer cet article' }) do %>
+        <%= image_tag(asset_path('bin.svg'), alt: 'supprimer', class: 'img-bin absolute index1') %>
+      <% end %>
+    <% end %>
+		<%= link_to 'Retour', blogs_path, class: 'btn btn-outline-primary my-5' %>
+	</div>
+	<div class="blog-autres ml-4">
+    <div class="carre-design ml-4">
+  		<div class="carre-partage my-5">
+          <div class="partager flex flex-center">
+            <h2>Partagez</h2>
+          </div>
+          <div class="liens-partage flex flex-center">
+            <%= social_share_button_tag(@blog.name, rel: 'nofollow') %>
+          </div>
+          <div class="newletter flex flex-column flex-center">
+            <%= link_to((new_user_registration_path), title: "S’inscrire à la newsletter", rel: "nofollow", class: "btn-newletter") do %>
+              <p class="black-olive m-0 font-18">S’inscrire à la newsletter</p>
+            <% end %>
+            <p class="white m-0 font-16">Inscription rapide et gratuite</p>
+          </div>
+      </div>
+      <div class="carre-partage my-5">
+        <p class="blue italic font-18 mx-3 line-height-116">Rédaction</p>
+        <p class="black font-18 text-800 mx-3 line-height-116">Besoin d’un rédacteur pour créer ou optimiser vos contenus web ?</p>
+        <p class="black-olive font-18 mx-3 line-height-116">Contactez-nous pour commander rapidement vos textes</p>
+        <%= link_to((contacts_path), title: "Contactez-nous", rel: "nofollow", class: "flex-around mt-4") do %>
+          <%= image_tag(asset_path('arrow.svg'),alt: 'Flèche Rédaction', class: 'img-arrow-blog') %>
+          <%= image_tag(asset_path('wall_post.svg'),alt: 'Contactez-nous Rédaction', class: 'img-contact-show-blog') %>
+        <% end %>
+      </div>
+       <div class="carre-partage my-5">
+        <p class="blue italic font-18 mx-3 line-height-116">Graphisme</p>
+        <p class="black font-18 text-800 mx-3 line-height-116">Logo,<br>Webdesign,<br>Identité visuelle</p>
+        <p class="black-olive font-18 mx-3 line-height-116">Contactez-nous pour recevoir un devis</p>
+        <%= link_to((contacts_path), title: "Contactez-nous", rel: "nofollow", class: "flex-around mt-4") do %>
+          <%= image_tag(asset_path('arrow.svg'),alt: 'Flèche Rédaction', class: 'img-arrow-blog') %>
+          <%= image_tag(asset_path('design_thinking.svg'),alt: 'Contactez-nous Rédaction', class: 'img-contact-show-blog') %>
+        <% end %>
+      </div>
+       <div class="carre-partage my-5">
+        <p class="blue italic font-18 mx-3 line-height-116">Référencement</p>
+        <p class="black font-18 text-800 mx-3 line-height-116">Besoin d’un expert SEO / SEA ?</p>
+        <p class="black-olive font-18 mx-3 line-height-116">Contactez-nous pour une meilleure position sur Google</p>
+        <%= link_to((contacts_path), title: "Contactez-nous", rel: "nofollow", class: "flex-around mt-4") do %>
+          <%= image_tag(asset_path('arrow.svg'),alt: 'Flèche Rédaction', class: 'img-arrow-blog') %>
+          <%= image_tag(asset_path('design_data.svg'),alt: 'Contactez-nous Rédaction', class: 'img-contact-show-blog') %>
+        <% end %>
+      </div>
+    </div> 
+	</div>
+</div>
+<div class="w-80 mx-auto">
+  <% if user_signed_in? == false %>
+    <%= link_to 'Se connecter', new_user_session_path, title: 'Se connecter', rel: 'nofollow', class: 'btn btn-outline-secondary my-5' %>
+  <% end %>
+</div>
+<%= render partial: "comments/index" %>
+<%= render "shared/footer" %>

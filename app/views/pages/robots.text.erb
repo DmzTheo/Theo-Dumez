@@ -1,4 +1,12 @@
 User-agent: *
-Disallow:
+Disallow: /users/
+Disallow: /contacts
+Disallow: /contacts/new
+Disallow: /blogs/new
+<% Blog.all.each do |blog| %>
+	Disallow: /blogs/<%= blog.friendly_id %>/edit
+	Disallow: /blogs/<%= blog.friendly_id %>/comments/
+<% end %>
+Disallow: /rails/
 
 Sitemap: <%= root_url %>sitemap.xml

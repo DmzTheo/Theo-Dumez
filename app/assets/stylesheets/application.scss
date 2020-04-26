@@ -13,3 +13,16 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Social Share Button
+@import "social-share-button";
+
+$size: 24px;
+
+.social-share-button {
+  .ssb-icon {
+    background-size: $size $size;
+    height: $size;
+    width: $size;
+  }
+}

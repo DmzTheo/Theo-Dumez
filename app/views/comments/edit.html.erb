@@ -1,0 +1,15 @@
+<% content_for :meta_title, "Agence marketing web Aix en provence – SEO – site internet" %>
+<% content_for :meta_description, "Créez / Optimiser votre site internet, son référencement | Dataweb Univers : agence de marketing web, SEO / SEA et développement à aix en provence – Théo Dumez" %>
+<% content_for :meta_robots, "noindex" %>
+
+<%= render "shared/navbar" %>
+
+<div class="articles-index">
+	<h1>Editer le commenaire</h1>
+
+	<%= render 'form', comment: @comment %>
+
+	<%= link_to 'Retour', @blog, class: 'btn btn-outline-secondary mt-4' %>
+</div>
+
+<%= render "shared/footer" %>

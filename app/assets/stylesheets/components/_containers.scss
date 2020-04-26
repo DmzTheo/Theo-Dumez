@@ -126,6 +126,97 @@
 	width: 70%;
 }
 
+.articles-index{
+	width: 85%;
+	margin: 50px auto 50px auto;
+}
+
+.articles{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.article{
+	width: 48%;
+	padding: 20px;
+}
+
+.blog-show{
+	width: 70%;
+}
+
+.blog-autres{
+	width: 300px;
+}
+
+.carre-partage{
+	border: 2px solid #00AEC8;
+	box-sizing: border-box;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.partager{
+	background: #00AEC8;
+	border-radius: 4px 4px 0px 0px;
+	height: 124px;
+	width: 100%;
+}
+
+.liens-partage{
+	height: 150px;
+	width: 100%;
+}
+
+.newletter{
+	width: 100%;
+	height: 124px;
+	background: #00AEC8;
+	border-radius: 0px 0px 4px 4px ;
+}
+
+.carre-design{
+	position: sticky;
+	top: -950px;
+}
+
+.commentaires{
+	width: 100%;
+	margin: 20px 0;
+	padding: 20px 0;
+}
+
+.commentaires-index{
+	width: 80%;
+	margin: 20px auto;
+}
+
+.comment-box {
+	border-top: 1px solid #e4e8ee;
+	border-bottom: 1px solid #e4e8ee;
+}
+
+.btn-newletter{
+	padding: 0 30px;
+	background-color: $white;
+	border-radius: 50px;
+	margin-top: 20px;
+}
+
+.like-nbr{
+	background-color: $blue;
+	border-radius: 10px;
+	padding: 0 10px;
+}
+
+.link-like {
+	width: 170px;
+	padding: 10px 10px;
+	border-radius: 15px;
+}
+
 .justify{
 	text-align: justify;
 }

@@ -1,0 +1,9 @@
+<% content_for :meta_title, "Agence marketing web Aix en provence – SEO – site internet" %>
+<% content_for :meta_description, "Créez / Optimiser votre site internet, son référencement | Dataweb Univers : agence de marketing web, SEO / SEA et développement à aix en provence – Théo Dumez" %>
+<% content_for :meta_robots, "noindex" %>
+
+<p>Welcome <%= @email %>!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>

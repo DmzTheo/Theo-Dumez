@@ -1,3 +1,14 @@
+
+.social-share-button-relative{
+	position: relative;
+	top: 19px;
+	left: 15px;
+}
+
+.btn-outline-primary, .btn-outline-secondary {
+	border-radius: 10px;	
+}
+
 .m-0{
 	margin: 0;
 }
@@ -151,6 +162,14 @@
 	left: 0;
 }
 
+.b-13{
+	bottom: 13px;
+}
+
 .max-700{
 	max-width: 700px;
+}
+
+.w-80{
+	width: 80%;
 }
