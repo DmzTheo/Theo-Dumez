@@ -30,7 +30,7 @@
   "@context": "http://schema.org",
   "@type": "Article",
   "headline": "<%= @blog.name %>",
-  "image": "<%= asset_path(@blog.image) %>",
+  "image": "https://www.data-web-univers.com<%= asset_path(@blog.image) %>",
   "datePublished": "<%= @blog.created_at.strftime("%Y-%m-%d") %>",
   "dateModified": "<%= @blog.updated_at.strftime("%Y-%m-%d") %>",
   "creator": "Dataweb Univers",
