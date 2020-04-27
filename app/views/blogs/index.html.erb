@@ -34,7 +34,7 @@
 
         <div class="article relative mb-5">
           <%= link_to((blog), title: blog.name, class: 'flex') do %>
-            <%= image_tag(asset_path(blog.image), alt: blog.name, class: 'img-little-blog') %>
+            <%= image_tag(blog.image.url, alt: blog.name, class: 'img-little-blog') %>
           <% end %>
           <%= link_to((blog), title: blog.name) do %>
             <h3 class="mt-4"><%= blog.name %></h3>
