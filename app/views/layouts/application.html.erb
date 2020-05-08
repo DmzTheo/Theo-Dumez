@@ -14,7 +14,7 @@
     <% if @blog == nil %>
         <meta property="og:image" content="https://www.data-web-univers.com<%= asset_path('Growth-marketing.png') %>">
     <% else %>
-        <meta property="og:image" content="https://www.data-web-univers.com<%= @blog.image.url %>">
+<!--         <meta property="og:image" content="https://www.data-web-univers.com<%#= @blog.image.key %>"> -->
     <% end %>
     <meta property="og:site_name" content="Dataweb Univers">
     <%= csrf_meta_tags %>
@@ -117,6 +117,8 @@
     <%= yield %>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js" nonce=<%= request.content_security_policy_nonce %>></script>
+
+    <%= cloudinary_js_config %>
 
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->

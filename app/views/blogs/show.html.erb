@@ -30,7 +30,7 @@
   "@context": "http://schema.org",
   "@type": "Article",
   "headline": "<%= @blog.name %>",
-  "image": "<%= @blog.image.url %>",
+  "image": "<%= @blog.image.key %>",
   "datePublished": "<%= @blog.created_at.strftime("%Y-%m-%d") %>",
   "dateModified": "<%= @blog.updated_at.strftime("%Y-%m-%d") %>",
   "creator": "Dataweb Univers",
@@ -48,7 +48,7 @@
 <div class="articles-index flex flex-row">
 	<div class="blog-show relative">
 		<div class="image-like_partage flex justify-content-center align-items-center">
-			<%= image_tag(@blog.image.url, alt: @blog.name, class: 'img-blog_view my-4 mx-auto') %>
+			<%= cl_image_tag(@blog.image.key, alt: @blog.name, class: 'img-blog_view my-4 mx-auto') %>
 		</div>
 
 		<div class="description-blog my-4">

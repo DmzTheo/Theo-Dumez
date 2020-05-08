@@ -21,6 +21,7 @@
 //= require swiper
 //= require tinymce
 //= require social-share-button
+//= require cloudinary
 //= require_tree .
 
 $('.dropdown-toggle').dropdown();

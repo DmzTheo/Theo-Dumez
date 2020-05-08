@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: badwoo
+  api_key: '829918276976484'
+  api_secret: "-X5GepeyPxMKERu-TY30ND3QA4A"
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: badwoo
+  api_key: '829918276976484'
+  api_secret: "-X5GepeyPxMKERu-TY30ND3QA4A"
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: badwoo
+  api_key: '829918276976484'
+  api_secret: "-X5GepeyPxMKERu-TY30ND3QA4A"
+  enhance_image_tag: true
+  static_file_support: false

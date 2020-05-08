@@ -38,7 +38,7 @@ gem 'acts_as_votable'
 gem "autoprefixer-rails"
 gem 'bootstrap', '~> 4.3.1'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
-gem 'carrierwave', '~> 2.0'
+gem 'cloudinary'
 gem 'devise'
 gem 'devise-i18n'
 gem 'dynamic_error_pages'
