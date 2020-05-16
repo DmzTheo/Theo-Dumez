@@ -1,13 +1,16 @@
 class PagesController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: [:home, :robots, :new, :create]
-  skip_after_action :verify_authorized, only: [:home, :robots, :new, :create]
+  skip_before_action :authenticate_user!, only: [:home, :robots, :mentions_legales, :new, :create]
+  skip_after_action :verify_authorized, only: [:home, :robots, :mentions_legales, :new, :create]
 
   def home
   end
 
   def robots
     respond_to :text
+  end
+
+  def mentions_legales
   end
 
   def new

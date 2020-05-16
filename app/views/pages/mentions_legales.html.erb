@@ -1,0 +1,55 @@
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "Accueil",
+		"item": "<%= root_url %>"
+	},{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Mentions légales",
+    "item": "<%= blogs_url %>"
+	}]
+}
+</script>
+
+<% content_for :meta_title, "Mentions légales Dataweb Univers – SEO – site internet" %>
+<% content_for :meta_description, "Consultez nos mentions légales | Dataweb Univers : agence de marketing web, SEO / SEA et développement à aix en provence – Théo Dumez" %>
+<% content_for :meta_robots, "index" %>
+
+<%= render "shared/navbar" %>
+
+<div class="description-mentions-legales">
+	<h1 class="h1">Mentions légales</h1>
+	<p class="sous-titre mb-4">En vigueur au 16/05/2020</p>
+	<p>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des Utilisateurs du site https://www.data-web-univers.com/ les présentes mentions légales.</p>
+	<p>La connexion et la navigation sur le site (indiquer le nom du site) par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.</p>
+	<p>Ces dernières sont accessibles sur le site à la rubrique « Mentions légales ».</p>
+
+	<h2 class="mt-5">ARTICLE 1 : L’éditeur</h2>
+	<p>L’édition et la direction de la publication du site https://www.data-web-univers.com/ est assurée par Théo Dumez, domiciliée 1350 chemin des saints pères, dont le numéro de téléphone est +33 (0)6 43 42 46 07 , et l'adresse e-mail dumez.theo.h@gmail.com.</p>
+
+	<h2 class="mt-5">ARTICLE 2 : L’hébergeur</h2>
+	<p>L'hébergeur du site https://www.data-web-univers.com/ est la Société Heroku Inc., dont le siège social est situé au 650 7th Street, San Francisco , avec le numéro de téléphone : +33 1 (877) 563-4311.</p>
+
+	<h2 class="mt-5">ARTICLE 3 : Accès au site</h2>
+	<p>Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance.</p>
+	<p>En cas de modification, interruption ou suspension des services le site https://www.data-web-univers.com/ ne saurait être tenu responsable.</p>
+
+	<h2 class="mt-5">ARTICLE 4 : Collecte des données</h2>
+	<p>Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les utilisateurs.</p>
+
+	<h2 class="mt-5">ARTICLE 5 : Cookies</h2>
+	<p>L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation.</p>
+	<p>En naviguant sur le site, il les accepte.</p>
+	<p>Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.</p>
+
+	<h2 class="mt-5">ARTICLE 6 : Propriété intellectuelle</h2>
+	<p>Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site https://www.data-web-univers.com/, sans autorisation de l’Editeur est prohibée et pourra entraîner des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.</p>
+</div>
+
+
+<%= render "shared/footer" %>

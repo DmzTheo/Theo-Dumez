@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 	get '/sitemap.xml' => 'sitemaps#index', :format => 'xml', :as => :sitemap
 
 	get 'robots.:format' => 'pages#robots'
+	get 'mentions-legales' => 'pages#mentions_legales'
+
 
 	match '/contacts',     to: 'contacts#new',             via: 'get'
 	resources "contacts", only: [:new, :create]
@@ -36,6 +38,8 @@ Rails.application.routes.draw do
 
 	get 'creation-site-internet' => 'services#creation_site_internet'
 	get 'referencement' => 'services#referencement'
+
+	mount PolicyManager::Engine => "/policies"
 
 	dynamic_error_pages
   

@@ -22,6 +22,7 @@
 //= require tinymce
 //= require social-share-button
 //= require cloudinary
+//= require cookies_eu
 //= require_tree .
 
-$('.dropdown-toggle').dropdown();
+$('.dropdown-toggle').dropdown();//= require cookies_eu

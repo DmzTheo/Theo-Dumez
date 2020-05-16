@@ -2,6 +2,7 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
+@import "cookies_eu";
 
 
 // External libraries
@@ -25,4 +26,4 @@ $size: 24px;
     height: $size;
     width: $size;
   }
-}
+}@import 'cookies_eu';

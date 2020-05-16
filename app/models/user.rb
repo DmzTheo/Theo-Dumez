@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+
+  include PolicyManager::Concerns::UserBehavior
+
   has_many :blogs
   has_many :comments
   # Include default devise modules. Others available are:
