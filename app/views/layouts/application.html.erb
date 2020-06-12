@@ -14,7 +14,7 @@
     <% if @blog == nil %>
         <meta property="og:image" content="https://www.data-web-univers.com<%= asset_path('Growth-marketing.png') %>">
     <% else %>
-<!--         <meta property="og:image" content="https://www.data-web-univers.com<%#= @blog.image.key %>"> -->
+        <meta property="og:image" content="<%=cl_image_tag @blog.image.key %>">
     <% end %>
     <meta property="og:site_name" content="Dataweb Univers">
     <%= csrf_meta_tags %>

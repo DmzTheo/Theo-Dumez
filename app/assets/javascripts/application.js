@@ -25,4 +25,4 @@
 //= require cookies_eu
 //= require_tree .
 
-$('.dropdown-toggle').dropdown();//= require cookies_eu
+$('.dropdown-toggle').dropdown();
