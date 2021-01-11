@@ -280,7 +280,7 @@ GEM
       ffi (~> 1.0)
     recaptcha (5.5.0)
       json
-    redcarpet (3.5.0)
+    redcarpet (3.5.1)
     redis (4.1.4)
     regexp_parser (1.7.0)
     responders (3.0.0)
