@@ -12,7 +12,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
     "jquery-ujs": "^1.2.2",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "popper.js": "^1.16.1",
     "serialize-javascript": "^3.0.0",
     "swiper": "^5.3.6",
